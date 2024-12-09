@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.11)  9 DEC 2024 13:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.11)  9 DEC 2024 14:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -449,70 +449,67 @@ File: bullet.png Graphic file (type png)
 <use bullet.png>
 Package pdftex.def Info: bullet.png  used on input line 44.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
+File: bullet.png Graphic file (type png)
+<use bullet.png>
+Package pdftex.def Info: bullet.png  used on input line 49.
+(pdftex.def)             Requested size: 5.0pt x 14.6871pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
 
  (C:\Users\hamza\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
 
 
 (C:\Users\hamza\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-File: bullet.png Graphic file (type png)
-<use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 67.
-(pdftex.def)             Requested size: 5.0pt x 14.6871pt.
-LaTeX Font Info:    Calculating math sizes for size <9.9> on input line 74.
-LaTeX Font Info:    Calculating math sizes for size <6.6> on input line 74.
+LaTeX Font Info:    Calculating math sizes for size <9.9> on input line 55.
+LaTeX Font Info:    Calculating math sizes for size <6.6> on input line 55.
 
-Overfull \hbox (9.2679pt too wide) in paragraph at lines 74--74
+Overfull \hbox (9.2679pt too wide) in paragraph at lines 55--55
 []  
  []
 
 
-Overfull \hbox (9.2679pt too wide) in paragraph at lines 74--74
+Overfull \hbox (9.2679pt too wide) in paragraph at lines 55--55
 []  
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 78--85
+Underfull \hbox (badness 1490) in paragraph at lines 59--66
 []\T1/times/n/n/10 HIS doc-u-ment is a tem-plate for L[]T[]X. If you are
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 78--85
+Underfull \hbox (badness 1484) in paragraph at lines 59--66
 \T1/times/n/n/10 read-ing a pa-per or PDF ver-sion of this doc-u-ment,
  []
 
 
-Underfull \hbox (badness 3058) in paragraph at lines 78--85
+Underfull \hbox (badness 3058) in paragraph at lines 59--66
 []$ \T1/times/n/n/10 so you can use it to pre-pare your
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 78--85
+Underfull \hbox (badness 2376) in paragraph at lines 59--66
 \T1/times/n/n/10 manuscript. If you would pre-fer to use La-TeX, down-
  []
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 78--85
+Underfull \hbox (badness 3138) in paragraph at lines 59--66
 \T1/times/n/n/10 at $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--85
+Underfull \hbox (badness 10000) in paragraph at lines 59--66
 []$
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 <logo.png, id=4, 206.27063pt x 53.44969pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 111.
+Package pdftex.def Info: logo.png  used on input line 92.
 (pdftex.def)             Requested size: 91.32pt x 23.66309pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -538,42 +535,42 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
  <./logo.png> <./bullet.png>]
-<equation3.png, id=18, 465.23813pt x 69.25874pt>
+<equation3.png, id=17, 465.23813pt x 69.25874pt>
 File: equation3.png Graphic file (type png)
 <use equation3.png>
-Package pdftex.def Info: equation3.png  used on input line 142.
+Package pdftex.def Info: equation3.png  used on input line 123.
 (pdftex.def)             Requested size: 241.92522pt x 36.01474pt.
 
-Overfull \hbox (2.25166pt too wide) in paragraph at lines 142--143
+Overfull \hbox (2.25166pt too wide) in paragraph at lines 123--124
 []$ $[] 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 15
-2.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 13
+3.
 (C:\Users\hamza\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
 LaTeX Font Warning: Font shape `T1/times/m/sc' undefined
-(Font)              using `T1/times/m/n' instead on input line 168.
+(Font)              using `T1/times/m/n' instead on input line 149.
 
-<fig1.png, id=20, 249.3315pt x 189.22694pt>
+<fig1.png, id=19, 249.3315pt x 189.22694pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 207.
+Package pdftex.def Info: fig1.png  used on input line 188.
 (pdftex.def)             Requested size: 249.33087pt x 189.22647pt.
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 207.
+Package pdftex.def Info: fig1.png  used on input line 188.
 (pdftex.def)             Requested size: 249.33087pt x 189.22647pt.
-<notaglinelogo.png, id=21, 169.38281pt x 42.91031pt>
+<notaglinelogo.png, id=20, 169.38281pt x 42.91031pt>
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 243.
+Package pdftex.def Info: notaglinelogo.png  used on input line 224.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 243.
+(Font)              using `T1/formata/m/it' instead on input line 224.
 
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -592,17 +589,17 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [2{C:/Users/hamza/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <.
 /notaglinelogo.png> <./equation3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 257--259
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
 []\T1/times/m/sc/10 A gen-eral IEEE styleguide is avail-able at 
  []
 
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 269.
+(Font)              using `T1/formata/m/it' instead on input line 250.
 
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 269.
+Package pdftex.def Info: notaglinelogo.png  used on input line 250.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -620,19 +617,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [3 <./fig1.png (PNG copy)>]
-<Base_Model.png, id=38, 469.755pt x 196.3335pt>
-File: Base_Model.png Graphic file (type png)
-<use Base_Model.png>
-Package pdftex.def Info: Base_Model.png  used on input line 291.
-(pdftex.def)             Requested size: 505.12177pt x 211.1143pt.
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 299.
+Package pdftex.def Info: notaglinelogo.png  used on input line 269.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 299.
+(Font)              using `T1/formata/m/it' instead on input line 269.
 
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -650,55 +642,63 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [4]
-Overfull \hbox (14.32645pt too wide) in paragraph at lines 324--384
+<Base_Model.png, id=41, 469.755pt x 196.3335pt>
+File: Base_Model.png Graphic file (type png)
+<use Base_Model.png>
+Package pdftex.def Info: Base_Model.png  used on input line 272.
+(pdftex.def)             Requested size: 505.12177pt x 211.1143pt.
+
+Overfull \hbox (14.32645pt too wide) in paragraph at lines 305--365
 [][]
  []
 
 
-LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 401.
-
-File: notaglinelogo.png Graphic file (type png)
-<use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 401.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[5 <./Base_Model.png>]
-Underfull \hbox (badness 3492) in paragraph at lines 402--409
+Underfull \hbox (badness 3492) in paragraph at lines 383--390
 \T1/times/m/sc/10 Most charts, graphs, and ta-bles are one col-umn wide
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 402--409
+Underfull \hbox (badness 1442) in paragraph at lines 383--390
 \T1/times/m/sc/10 (3.5 inches/88 mil-lime-ters/21 pi-cas) or page wide (7.16
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 439--444
+Underfull \hbox (badness 3364) in paragraph at lines 420--425
 \T1/times/m/sc/10 color space. Grayscale im-ages should be sub-mit-ted in
  []
 
-File: notaglinelogo.png Graphic file (type png)
-<use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 517.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 517.
+(Font)              using `T1/formata/m/it' instead on input line 425.
+
+File: notaglinelogo.png Graphic file (type png)
+<use notaglinelogo.png>
+Package pdftex.def Info: notaglinelogo.png  used on input line 425.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[5]
+File: notaglinelogo.png Graphic file (type png)
+<use notaglinelogo.png>
+Package pdftex.def Info: notaglinelogo.png  used on input line 486.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
+
+
+LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
+(Font)              using `T1/formata/m/it' instead on input line 486.
 
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -715,58 +715,58 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[6]
-Underfull \hbox (badness 3302) in paragraph at lines 533--535
+[6 <./Base_Model.png>]
+Underfull \hbox (badness 3302) in paragraph at lines 514--516
 \T1/times/m/sc/10 com-mand be-low. If you have only one ap-pendix, use
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--585
+Underfull \hbox (badness 10000) in paragraph at lines 559--566
 \T1/times/m/sc/10 Authors must sub-mit an elec-tronic IEEE Copy-right
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--585
+Underfull \hbox (badness 10000) in paragraph at lines 559--566
 \T1/times/m/sc/10 Form (eCF) upon sub-mit-ting their fi-nal manuscript
  []
 
 
-Underfull \hbox (badness 7030) in paragraph at lines 578--585
+Underfull \hbox (badness 7030) in paragraph at lines 559--566
 \T1/times/m/sc/10 files. You can ac-cess the eCF sys-tem through your
  []
 
 
-Underfull \hbox (badness 6675) in paragraph at lines 578--585
+Underfull \hbox (badness 6675) in paragraph at lines 559--566
 \T1/times/m/sc/10 manuscript sub-mis-sion sys-tem or through the Au-thor
  []
 
 
-Underfull \hbox (badness 5504) in paragraph at lines 578--585
+Underfull \hbox (badness 5504) in paragraph at lines 559--566
 \T1/times/m/sc/10 Gate-way. You are re-spon-si-ble for ob-tain-ing any nec-
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 578--585
+Underfull \hbox (badness 5519) in paragraph at lines 559--566
 \T1/times/m/sc/10 es-sary ap-provals and/or se-cu-rity clear-ances. For ad-di-
  []
 
 
-Underfull \hbox (badness 1874) in paragraph at lines 578--585
+Underfull \hbox (badness 1874) in paragraph at lines 559--566
 \T1/times/m/sc/10 IEEE In-tel-lec-tual Prop-erty Rights de-part-ment web page
  []
 
 
-Underfull \hbox (badness 6032) in paragraph at lines 578--585
+Underfull \hbox (badness 6032) in paragraph at lines 559--566
 \T1/times/m/sc/10 at $[]$
  []
 
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 604.
+(Font)              using `T1/formata/m/it' instead on input line 581.
 
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 604.
+Package pdftex.def Info: notaglinelogo.png  used on input line 581.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -784,25 +784,25 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [7]
-Underfull \hbox (badness 3396) in paragraph at lines 651--654
+Underfull \hbox (badness 3396) in paragraph at lines 632--635
 \T1/times/m/sc/10 J. K. Au-thor, ``Name of pa-per,'' \T1/times/m/it/10 Ab-brev.
  Ti-tle of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 651--654
+Underfull \hbox (badness 10000) in paragraph at lines 632--635
 \T1/times/m/it/10 Pe-ri-od-i-cal\T1/times/m/sc/10 , vol. $\T1/times/m/it/10 x$\
 T1/times/m/sc/10 , no. $\T1/times/m/it/10 x$\T1/times/m/sc/10 , pp. \T1/times/m
 /it/10 xxx--xxx\T1/times/m/sc/10 , Ab-brev.
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 655--658
+Underfull \hbox (badness 2409) in paragraph at lines 636--639
 \T1/times/m/sc/10 J.K. Au-thor. (year, month). Ti-tle. pre-sented at ab-
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 667--670
+Underfull \hbox (badness 1622) in paragraph at lines 648--651
 \T1/times/m/sc/10 day). Patent Num-ber [Type of medium]. Avail-able:
  []
 
@@ -811,12 +811,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 686.
+Package pdftex.def Info: notaglinelogo.png  used on input line 666.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 686.
+(Font)              using `T1/formata/m/it' instead on input line 666.
 
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -834,31 +834,31 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [8]
-Underfull \hbox (badness 2435) in paragraph at lines 691--692
+Underfull \hbox (badness 2435) in paragraph at lines 672--673
 []\T1/times/m/sc/10 J. K. Au-thor, pri-vate com-mu-ni-ca-tion, Ab-brev.
  []
 
 
-LaTeX Warning: Citation `b27' on page 9 undefined on input line 695.
+LaTeX Warning: Citation `b27' on page 9 undefined on input line 676.
 
 (access.bbl)
 <author1.png, id=63, 225.84375pt x 282.30469pt>
 File: author1.png Graphic file (type png)
 <use author1.png>
-Package pdftex.def Info: author1.png  used on input line 813.
+Package pdftex.def Info: author1.png  used on input line 794.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 File: author1.png Graphic file (type png)
 <use author1.png>
-Package pdftex.def Info: author1.png  used on input line 813.
+Package pdftex.def Info: author1.png  used on input line 794.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 833.
+(Font)              using `T1/formata/m/it' instead on input line 814.
 
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 833.
+Package pdftex.def Info: notaglinelogo.png  used on input line 814.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -879,33 +879,33 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 <author2.png, id=71, 225.84375pt x 282.30469pt>
 File: author2.png Graphic file (type png)
 <use author2.png>
-Package pdftex.def Info: author2.png  used on input line 833.
+Package pdftex.def Info: author2.png  used on input line 814.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 File: author2.png Graphic file (type png)
 <use author2.png>
-Package pdftex.def Info: author2.png  used on input line 833.
+Package pdftex.def Info: author2.png  used on input line 814.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 <author3.png, id=74, 225.84375pt x 282.30469pt>
 File: author3.png Graphic file (type png)
 <use author3.png>
-Package pdftex.def Info: author3.png  used on input line 863.
+Package pdftex.def Info: author3.png  used on input line 844.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 File: author3.png Graphic file (type png)
 <use author3.png>
-Package pdftex.def Info: author3.png  used on input line 863.
+Package pdftex.def Info: author3.png  used on input line 844.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 882.
+Package pdftex.def Info: bullet.png  used on input line 863.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 884.
+Package pdftex.def Info: notaglinelogo.png  used on input line 865.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 884.
+(Font)              using `T1/formata/m/it' instead on input line 865.
 
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -936,11 +936,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4878 strings out of 474486
- 79020 string characters out of 5743755
- 1948542 words of memory out of 5000000
- 27071 multiletter control sequences out of 15000+600000
- 644020 words of font info for 163 fonts, out of 8000000 for 9000
+ 4874 strings out of 474486
+ 78955 string characters out of 5743755
+ 1954542 words of memory out of 5000000
+ 27067 multiletter control sequences out of 15000+600000
+ 638979 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,14n,79p,1399b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/hamza/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
@@ -964,7 +964,7 @@ rmata-condmedium.pfb><./t1-formata-medium.pfb><./t1-formata-mediumitalic.pfb><.
 /t1-formata-regular.pfb><./t1-giovannistd-bookitalic.pfb><./t1-times-bold.pfb><
 ./t1-times-italic.pfb><./t1-times.pfb><C:/Users/hamza/AppData/Local/Programs/Mi
 KTeX/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on access.pdf (10 pages, 813723 bytes).
+Output written on access.pdf (10 pages, 813883 bytes).
 PDF statistics:
  187 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
