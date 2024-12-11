@@ -10,6 +10,7 @@
 \usepackage{multirow}%z
 \usepackage{array} %Z
 \usepackage{booktabs} %z
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -248,7 +249,14 @@ The initialization of the framework is preprocessing the images based on the num
 
 After reshaping the images according to our input shape which will reduce the size of the image so that our next function would work effectively. Creating batches to handle memory overflow and preprocessing image before feeding them to the ELA function ensures that the system doesn’t require a lot of resources and is more optimized to create a more robust model.
 
-Further, we take each resized image and input it to our ELA function, this step is iterated over multiple images to get robust images with reduced quality  to take forward for our ELA function. 
+Further, we take each resized image and input it to our ELA function, this step is iterated over multiple images to get robust images with reduced quality  to take forward for our ELA function.
+
+\begin{figure*}
+	\centering
+	\includegraphics[width=\linewidth]{Base_Model.png}
+	\caption{ Architecture of the base model}
+	\label{base-model}
+\end{figure*} 
 
 \subsection{ELA Process with Generators}
 For each image in our ELA function, we generate a buffer to save the original image to a temporary in-memory file with reduced quality, which helps us in reducing the overall memory utilization of the system. We load the compressed image from the buffer and calculate the difference between the original image and the one which was compressed to get the Pillow image object, this is a technique used in image forensics to detect tampering or inconsistencies in an image. We enhance the brightness of the image according to the extrema we get in the pillow image object. 
@@ -266,13 +274,6 @@ The base of our architecture is the ResNet50 model, known for its depth and effi
 Once we are done with that, we added a series of two dense layers. The first layer consists of 512 neurons providing substantial capacity to capture complex patterns. The second contains 256 neurons for further refinement of feature extraction. Both are activated by the ReLU activation function, which introduces non-linearity in deep networks and provides output zero for negative inputs, creating sparsity in the activations that could further be helpful in efficient computations with a reduction in overfitting. While being computationally less expensive than sigmoid or tanh function. The custom layers then involved a dropout regularization technique which was employed after each dense layer to with a rate of 0.75 after the first dense layer to impose strong regularization and rate of 0.5 was applied after the second dense layer for moderate regularization. This helped in preventing overfitting of the model during training. After dropout regularization, there was a single neuron in the output layer with sigmoid activation to predict the probability of the positive class, which is suitable for binary classification tasks.
 
 It achieves a very good trade-off among accuracy, training efficiency, and robustness, making it pretty effective in real-world applications. This model was trained for more than 100 epochs with a step size of about 145 while capturing essential evaluation metrics such as accuracy, the f1 score, and validation accuracy. This will make sure we minimize the gap between the training and validation accuracy of the model, which will be robust and very effective in real-world applications.
-
-\begin{figure*}
-	\centering
-	\includegraphics[width=\linewidth]{Base_Model.png}
-	\caption{ Architecture of the base model}
-	\label{base-model}
-\end{figure*}
 
 
 
@@ -507,188 +508,10 @@ paper indicating which figures or tables you would like to be handled that
 way, and stating that you are willing to pay the additional fee.
 
 \section{Conclusion}
-Although a conclusion may review the  main points of the paper, do not replicate the abstract as the conclusion. A
-conclusion might elaborate on the importance of the work or suggest
-applications and extensions.
-
-If you have multiple appendices, use the $\backslash$appendices command below. If you have only one appendix, use
-$\backslash$appendix[Appendix Title]
-
-\appendices
-\section{\break Footnotes}
-Number footnotes separately in superscript numbers.\footnote{It is recommended that footnotes be avoided (except for
-the unnumbered footnote with the receipt date on the first page). Instead,
-try to integrate the footnote information into the text.} Place the actual
-footnote at the bottom of the column in which it is cited; do not put
-footnotes in the reference list (endnotes). Use letters for table footnotes
-(see Table \ref{table}).
-
-\section{\break Submitting Your Paper for Review}
-
-\subsection{Final Stage}
-When your article is accepted, you can submit the final files, including figures, tables, and photos, per the journal's guidelines through the submission system used to submit the articlle.
- You may use \emph{Zip} for large files, or compress files using \emph{Compress, Pkzip, Stuffit,} or \emph{Gzip.}
-
-In addition, designate one author as the ``corresponding author.'' This is the author to
-whom proofs of the paper will be sent. Proofs are sent to the corresponding
-author only.
-
-\subsection{Review Stage Using IEEE Author Portal}
-Article contributions to IEEE Access should be submitted electronically on the IEEE Author Portal. For more information, please visit
-\underline{https://ieeeaccess.ieee.org/}.
-
-Along with other information, you will be asked to select the subject from a
-pull-down list. There are various steps to the
-submission process; you must complete all steps for a complete submission.
-At the end of each step you must click ``Save and Continue''; just uploading
-the paper is not sufficient. After the last step, you should see a
-confirmation that the submission is complete. You should also receive an
-e-mail confirmation. For inquiries regarding the submission of your article, please contact ieeeaccess@ieee.org.
-
-The manuscript should be prepared in a double column, single-spaced format using a required IEEE Access template.
-A Word or LaTeX file and a PDF file are both required upon submission in the IEEE Author Portal.
-
-\subsection{Final Stage Using IEEE Author Portal}
-Upon acceptance, you will receive an email with specific instructions
-
-Designate the author who submitted the manuscript on
-IEEE Author Portal as the ``corresponding author.'' This is the only
-author to whom proofs of the paper will be sent.
-
-\subsection{Copyright Form}
-Authors must submit an electronic IEEE Copyright Form (eCF) upon submitting
-their final manuscript files. You can access the eCF system through your
-manuscript submission system or through the Author Gateway. You are
-responsible for obtaining any necessary approvals and/or security
-clearances. For additional information on intellectual property rights,
-visit the IEEE Intellectual Property Rights department web page at
-\underline{http://www.ieee.org/publications\_standards/publications/}\break\underline{rights/index.html}.
-
-\section{\break IEEE Publishing Policy}
-The general IEEE policy requires that authors should only submit original
-work that has neither appeared elsewhere for publication, nor is under
-review for another refereed publication. The submitting author must disclose
-all prior publication(s) and current submissions when submitting a
-manuscript. Do not publish ``preliminary'' data or results. To avoid any delays in
-publication, please be sure to follow these instructions.  Final
-submissions should include source files of your accepted manuscript, high
-quality graphic files, and a formatted pdf file. If you have any questions
-regarding the final submission process, please contact the administrative
-contact for the journal.
-author is responsible for obtaining agreement of all coauthors and any
-consent required from employers or sponsors before submitting an article.
-
-The IEEE Access Editorial Office does not publish conference
-records or proceedings, but can publish articles related to conferences that
-have undergone rigorous peer review. Minimally, two reviews are required for
-every article submitted for peer review.
-
-\section{\break Publication Principles}
-Authors should consider the following points:
-
-\begin{enumerate}
-\item Technical papers submitted for publication must advance the state of knowledge and must cite relevant prior work.
-\item The length of a submitted paper should be commensurate with the importance, or appropriate to the complexity, of the work. For example, an obvious extension of previously published work might not be appropriate for publication or might be adequately treated in just a few pages.
-\item Authors must convince both peer reviewers and the editors of the scientific and technical merit of a paper; the standards of proof are higher when extraordinary or unexpected results are reported.
-\item Because replication is required for scientific progress, papers submitted for publication must provide sufficient information to allow readers to perform similar experiments or calculations and
-use the reported results. Although not everything need be disclosed, a paper
-must contain new, useable, and fully described information. For example, a
-specimen's chemical composition need not be reported if the main purpose of
-a paper is to introduce a new measurement technique. Authors should expect
-to be challenged by reviewers if the results are not supported by adequate
-data and critical details.
-\item Papers that describe ongoing work or announce the latest technical achievement, which are suitable for presentation at a professional conference, may not be appropriate for publication.
-\end{enumerate}
+This study is essential in maintaining integrity is crucial in fields like Law enforcement, Cyber security, and Legal investigations. In this project, we aimed to design a robust system capable of determining whether an image is tampered with. The research compares the performance of two widely known CNN models, VGG16 and ResNet50, with traditional preprocessing methods like ELA and data augmentation. The project concludes with viable results that taking colour inconsistencies and compression differences significantly improves model capability compared to conventional grayscale-based ELA methods.The system can be integrated into social media to moderate content in real-time, flagging misleading images and advancing platform integrity. In journalism, it makes sure that media is authentic by verifying images before publication; this helps in debunking fake news and fosters ethical reporting as a way of maintaining the public's trust in digital journalism.Although promising performance may be seen in the CASIA v2 dataset, it does not generalize upon exposure to other datasets or real-world scenarios. This needs to be handled in future work by enrichment of the dataset with diversity and updates for further strengthening the resistance and longevity of the model. Moreover, interpreting it with Explainable AI by using Grad-CAM will illustrate the regions of interest influential in the model's choices for transparent decisions and gaining the trust of the users.
+The dataset and code for further research are available \href{https://www.kaggle.com/datasets/divg07/casia-20-image-tampering-detection-dataset/data}{[here]} and \href{https://github.com/ayaz168/veriforge}{[repository link]}.
 
 
-
-\section{\break Reference Examples}
-
-\begin{itemize}
-
-\item \emph{Basic format for books:}\\
-J. K. Author, ``Title of chapter in the book,'' in \emph{Title of His Published Book, x}th ed. City of Publisher, (only U.S. State), Country: Abbrev. of Publisher, year, ch. $x$, sec. $x$, pp. \emph{xxx--xxx.}\\
-See \cite{chandio2022precise,chandio2022precise}.
-
-\item \emph{Basic format for periodicals:}\\
-J. K. Author, ``Name of paper,'' \emph{Abbrev. Title of Periodical}, vol. \emph{x, no}. $x, $pp\emph{. xxx--xxx, }Abbrev. Month, year, DOI. 10.1109.\emph{XXX}.123456.\\
-See \cite{chandio2022precise}--\cite{chandio2022precise}.
-
-\item \emph{Basic format for reports:}\\
-J. K. Author, ``Title of report,'' Abbrev. Name of Co., City of Co., Abbrev. State, Country, Rep. \emph{xxx}, year.\\
-See \cite{chandio2022precise}.
-
-\item \emph{Basic format for handbooks:}\\
-\emph{Name of Manual/Handbook, x} ed., Abbrev. Name of Co., City of Co., Abbrev. State, Country, year, pp. \emph{xxx--xxx.}\\
-See \cite{chandio2022precise}.
-
-\item \emph{Basic format for books (when available online):}\\
-J. K. Author, ``Title of chapter in the book,'' in \emph{Title of
-Published Book}, $x$th ed. City of Publisher, State, Country: Abbrev.
-of Publisher, year, ch. $x$, sec. $x$, pp. \emph{xxx--xxx}. [Online].
-Available: \underline{http://www.web.com}\\
-See \cite{chandio2022precise}--\cite{chandio2022precise}.
-
-\item \emph{Basic format for journals (when available online):}\\
-J. K. Author, ``Name of paper,'' \emph{Abbrev. Title of Periodical}, vol. $x$, no. $x$, pp. \emph{xxx--xxx}, Abbrev. Month, year. Accessed on: Month, Day, year, DOI: 10.1109.\emph{XXX}.123456, [Online].\\
-See \cite{chandio2022precise}--\cite{chandio2022precise}.
-
-\item \emph{Basic format for papers presented at conferences (when available online): }\\
-J.K. Author. (year, month). Title. presented at abbrev. conference title. [Type of Medium]. Available: site/path/file\\
-See \cite{chandio2022precise}.
-
-\item \emph{Basic format for reports and handbooks (when available online):}\\
-J. K. Author. ``Title of report,'' Company. City, State, Country. Rep. no., (optional: vol./issue), Date. [Online] Available: site/path/file\\
-See \cite{chandio2022precise}.
-
-\item \emph{Basic format for computer programs and electronic documents (when available online): }\\
-Legislative body. Number of Congress, Session. (year, month day). \emph{Number of bill or resolution}, \emph{Title}. [Type of medium]. Available: site/path/file\\
-See \cite{chandio2022precise}.
-
-\item \emph{Basic format for patents (when available online):}\\
-Name of the invention, by inventor's name. (year, month day). Patent Number [Type of medium]. Available: site/path/file\\
-See \cite{chandio2022precise}.
-
-\item \emph{Basic format}\emph{for conference proceedings (published):}\\
-J. K. Author, ``Title of paper,'' in \emph{Abbreviated Name of Conf.}, City of Conf., Abbrev. State (if given), Country, year, pp. \emph{xxxxxx.}\\
-See \cite{chandio2022precise}.
-
-\item \emph{Example for papers presented at conferences (unpublished):}\\
-See \cite{chandio2022precise}.
-
-\item \emph{Basic format for patents}$:$\\
-J. K. Author, ``Title of patent,'' U.S. Patent \emph{x xxx xxx}, Abbrev. Month, day, year.\\
-See \cite{chandio2022precise}.
-
-\item \emph{Basic format for theses (M.S.) and dissertations (Ph.D.):}
-\begin{enumerate}
-\item J. K. Author, ``Title of thesis,'' M.S. thesis, Abbrev. Dept., Abbrev. Univ., City of Univ., Abbrev. State, year.
-\item J. K. Author, ``Title of dissertation,'' Ph.D. dissertation, Abbrev. Dept., Abbrev. Univ., City of Univ., Abbrev. State, year.
-\end{enumerate}
-See \cite{chandio2022precise,chandio2022precise}.
-
-\item \emph{Basic format for the most common types of unpublished references:}
-\begin{enumerate}
-\item J. K. Author, private communication, Abbrev. Month, year.
-\item J. K. Author, ``Title of paper,'' unpublished.
-\item J. K. Author, ``Title of paper,'' to be published.
-\end{enumerate}
-See \cite{b27}--\cite{chandio2022precise}.
-
-\item \emph{Basic formats for standards:}
-\begin{enumerate}
-\item \emph{Title of Standard}, Standard number, date.
-\item \emph{Title of Standard}, Standard number, Corporate author, location, date.
-\end{enumerate}
-See \cite{chandio2022precise}.
-
-\item \emph{Article number in~reference examples:}\\
-See \cite{chandio2022precise}.
-
-\item \emph{Example when using et al.:}\\
-See \cite{chandio2022precise}.
-
-\end{itemize}
 
 
 \section*{Acknowledgment}
