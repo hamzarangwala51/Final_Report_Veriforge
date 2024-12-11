@@ -166,29 +166,7 @@ will not stop equation numbers inside \verb|{array}| (there won't be
 any anyway) and it might stop a wanted equation number in the
 surrounding equation.
 
-\section{Units}
-Use either SI (MKS) or CGS as primary units. (SI units are strongly
-encouraged.) English units may be used as secondary units (in parentheses).
-This applies to papers in data storage. For example, write ``15
-Gb/cm$^{2}$ (100 Gb/in$^{2})$.'' An exception is when
-English units are used as identifiers in trade, such as ``3$^{1\!/\!2}$-in
-disk drive.'' Avoid combining SI and CGS units, such as current in amperes
-and magnetic field in oersteds. This often leads to confusion because
-equations do not balance dimensionally. If you must use mixed units, clearly
-state the units for each quantity in an equation.
 
-The SI unit for magnetic field strength $H$ is A/m. However, if you wish to use
-units of T, either refer to magnetic flux density $B$ or magnetic field
-strength symbolized as $\mu _{0}H$. Use the center dot to separate
-compound units, e.g., ``A$\cdot $m$^{2}$.''
-
-
-\Figure[t!](topskip=0pt, botskip=0pt, midskip=0pt){fig1.png}
-{ \textbf{Magnetization as a function of applied field.
-It is good practice to explain the significance of the figure in the caption.}
-\label{fig1}}
-
-\subsection{Example Table}
 
 \begin{table*}[t!]
 \centering
@@ -206,38 +184,7 @@ Author et al. (2024)~\cite{chandio2022precise} & CICDDoS\-2019 & CNNs & 97.7\% \
 
 
 
-\section{Some Common Mistakes}
-The word ``data'' is plural, not singular. The subscript for the
-permeability of vacuum $\mu _{0}$ is zero, not a lowercase letter
-``o.'' The term for residual magnetization is ``remanence''; the adjective
-is ``remanent''; do not write ``remnance'' or ``remnant.'' Use the word
-``micrometer'' instead of ``micron.'' A graph within a graph is an
-``inset,'' not an ``insert.'' The word ``alternatively'' is preferred to the
-word ``alternately'' (unless you really mean something that alternates). Use
-the word ``whereas'' instead of ``while'' (unless you are referring to
-simultaneous events). Do not use the word ``essentially'' to mean
-``approximately'' or ``effectively.'' Do not use the word ``issue'' as a
-euphemism for ``problem.'' When compositions are not specified, separate
-chemical symbols by en-dashes; for example, ``NiMn'' indicates the
-intermetallic compound Ni$_{0.5}$Mn$_{0.5}$ whereas
-``Ni--Mn'' indicates an alloy of some composition
-Ni$_{x}$Mn$_{1-x}$.
 
-Be aware of the different meanings of the homophones ``affect'' (usually a
-verb) and ``effect'' (usually a noun), ``complement'' and ``compliment,''
-``discreet'' and ``discrete,'' ``principal'' (e.g., ``principal
-investigator'') and ``principle'' (e.g., ``principle of measurement''). Do
-not confuse ``imply'' and ``infer.''
-
-Prefixes such as ``non,'' ``sub,'' ``micro,'' ``multi,'' and ``ultra'' are
-not independent words; they should be joined to the words they modify,
-usually without a hyphen. There is no period after the ``et'' in the Latin
-abbreviation ``\emph{et al.}'' (it is also italicized). The abbreviation ``i.e.,'' means
-``that is,'' and the abbreviation ``e.g.,'' means ``for example'' (these
-abbreviations are not italicized).
-
-A general IEEE styleguide is available at \break
-\underline{http://www.ieee.org/authortools}.
 
 \section{PROPOSED METHOD}
 
@@ -277,235 +224,31 @@ It achieves a very good trade-off among accuracy, training efficiency, and robus
 
 
 
-
-\subsection{Types of Graphics}
-The following list outlines the different types of graphics published in
-IEEE journals. They are categorized based on their construction, and use of
-color/shades of gray:
-
-\subsubsection{Color/Grayscale figures}
-{Figures that are meant to appear in color, or shades of black/gray. Such
-figures may include photographs, illustrations, multicolor graphs, and
-flowcharts. For multicolor graphs, please avoid any gray backgrounds or shading, as well as screenshots, instead export the graph from the program used to collect the data.}
-
-\subsubsection{Line Art figures}
-{Figures that are composed of only black lines and shapes. These figures
-should have no shades or half-tones of gray, only black and white.}
-
-\subsubsection{Author photos}
-{Author photographs should be included with the author biographies located at the end of the article underneath References. }
-
-\subsubsection{Tables}
-{Data charts which are typically black and white, but sometimes include
-color.}
-
-\begin{table}
-\caption{\textbf{Units for Magnetic Properties}}
-\label{table}
-\setlength{\tabcolsep}{3pt}
-\begin{tabular}{|p{25pt}|p{75pt}|p{115pt}|}
-\hline
-Symbol&
-Quantity&
-Conversion from Gaussian and \par CGS EMU to SI $^{\mathrm{a}}$ \\
-\hline
-$\Phi $&
-magnetic flux&
-1 Mx $\to  10^{-8}$ Wb $= 10^{-8}$ V$\cdot $s \\
-$B$&
-magnetic flux density, \par magnetic induction&
-1 G $\to  10^{-4}$ T $= 10^{-4}$ Wb/m$^{2}$ \\
-$H$&
-magnetic field strength&
-1 Oe $\to  10^{3}/(4\pi )$ A/m \\
-$m$&
-magnetic moment&
-1 erg/G $=$ 1 emu \par $\to 10^{-3}$ A$\cdot $m$^{2} = 10^{-3}$ J/T \\
-$M$&
-magnetization&
-1 erg/(G$\cdot $cm$^{3}) =$ 1 emu/cm$^{3}$ \par $\to 10^{3}$ A/m \\
-4$\pi M$&
-magnetization&
-1 G $\to  10^{3}/(4\pi )$ A/m \\
-$\sigma $&
-specific magnetization&
-1 erg/(G$\cdot $g) $=$ 1 emu/g $\to $ 1 A$\cdot $m$^{2}$/kg \\
-$j$&
-magnetic dipole \par moment&
-1 erg/G $=$ 1 emu \par $\to 4\pi \times  10^{-10}$ Wb$\cdot $m \\
-$J$&
-magnetic polarization&
-1 erg/(G$\cdot $cm$^{3}) =$ 1 emu/cm$^{3}$ \par $\to 4\pi \times  10^{-4}$ T \\
-$\chi , \kappa $&
-susceptibility&
-1 $\to  4\pi $ \\
-$\chi_{\rho }$&
-mass susceptibility&
-1 cm$^{3}$/g $\to  4\pi \times  10^{-3}$ m$^{3}$/kg \\
-$\mu $&
-permeability&
-1 $\to  4\pi \times  10^{-7}$ H/m \par $= 4\pi \times  10^{-7}$ Wb/(A$\cdot $m) \\
-$\mu_{r}$&
-relative permeability&
-$\mu \to \mu_{r}$ \\
-$w, W$&
-energy density&
-1 erg/cm$^{3} \to  10^{-1}$ J/m$^{3}$ \\
-$N, D$&
-demagnetizing factor&
-1 $\to  1/(4\pi )$ \\
-\hline
-\multicolumn{3}{p{251pt}}{Vertical lines are optional in tables. Statements that serve as captions for
-the entire table do not need footnote letters. }\\
-\multicolumn{3}{p{251pt}}{$^{\mathrm{a}}$Gaussian units are the same as cg emu for magnetostatics; Mx
-$=$ maxwell, G $=$ gauss, Oe $=$ oersted; Wb $=$ weber, V $=$ volt, s $=$
-second, T $=$ tesla, m $=$ meter, A $=$ ampere, J $=$ joule, kg $=$
-kilogram, H $=$ henry.}
-\end{tabular}
-\label{tab1}
+\section{Results and Analysis}
+\begin{table}[h!]
+	\centering
+	\setlength{\tabcolsep}{3pt}
+	\begin{tabular}{|p{75pt}|p{150pt}|p{115pt}|}
+		\hline
+		\textbf{Feature}            & \textbf{Description}                                                                 \\ \hline
+		\textbf{Dataset Name}       & CASIA TIDE v2.0                                                                      \\ \hline
+		\textbf{Purpose}            & Designed for research and development in image forgery detection                     \\ \hline
+		\textbf{Released By}        & Chinese Academy of Sciences Institute of Automation (CASIA)                          \\ \hline
+		\textbf{Image Type}         & Digital images, both authentic and tampered                                          \\ \hline
+		\textbf{Number of Images}   & 12,614 images (7,491 authentic and 5,123 tampered)                                   \\ \hline
+		\textbf{Forgery Techniques} & Splicing, copy-move, and other common image tampering techniques                      \\ \hline
+		\textbf{Resolution}         & Varies (typically medium resolution)                                                 \\ \hline
+		\textbf{File Format}        & JPEG (for compressed images)                                                         \\ \hline
+		\textbf{Dataset Structure}  & Contains two folders: one for authentic images and one for tampered images           \\ \hline
+		\textbf{Applications}       & Used for image forgery detection, digital forensics, and tampered image localization research \\ \hline
+		\textbf{Public Availability} & Available for academic and non-commercial use upon request from CASIA               \\ \hline
+	\end{tabular}
+	\label{casiav2overview}
+	\caption{Overview of the CASIA TIDE v2.0 Dataset}
 \end{table}
 
-\subsection{Multipart figures}
-Figures compiled of more than one sub-figure presented side-by-side, or
-stacked. If a multipart figure is made up of multiple figure
-types (one part is lineart, and another is grayscale or color) the figure
-should meet the stricter guidelines.
-
-\subsection{File Formats For Graphics}\label{formats}
-Format and save your graphics using a suitable graphics processing program
-that will allow you to create the images as PostScript (.PS), Encapsulated
-PostScript (.EPS), Tagged Image File Format (.TIFF), Portable Document
-Format (.PDF), Portable Network Graphics (.PNG), or Metapost (.MPS), sizes them, and adjusts
-the resolution settings. When
-submitting your final paper, your graphics should all be submitted
-individually in one of these formats along with the manuscript.
-
-\subsection{Sizing of Graphics}
-Most charts, graphs, and tables are one column wide (3.5 inches/88
-millimeters/21 picas) or page wide (7.16 inches/181 millimeters/43
-picas). The maximum depth a graphic can be is 8.5 inches (216 millimeters/54
-picas). When choosing the depth of a graphic, please allow space for a
-caption. Figures can be sized between column and page widths if the author
-chooses, however it is recommended that figures are not sized less than
-column width unless when necessary.
-
-There is currently one publication with column measurements that do not
-coincide with those listed above. Proceedings of the IEEE has a column
-measurement of 3.25 inches (82.5 millimeters/19.5 picas).
-
-The final printed size of author photographs is exactly
-1 inch wide by 1.25 inches tall (25.4 millimeters$\,\times\,$31.75 millimeters/6
-picas$\,\times\,$7.5 picas). Author photos printed in editorials measure 1.59 inches
-wide by 2 inches tall (40 millimeters$\,\times\,$50 millimeters/9.5 picas$\,\times\,$12
-picas).
-
-\subsection{Resolution }
-The proper resolution of your figures will depend on the type of figure it
-is as defined in the ``Types of Figures'' section. Author photographs,
-color, and grayscale figures should be at least 300dpi. Line art, including
-tables should be a minimum of 600dpi.
-
-\subsection{Vector Art}
-In order to preserve the figures' integrity across multiple computer
-platforms, we accept files in the following formats: .EPS/.PDF/.PS. All
-fonts must be embedded or text converted to outlines in order to achieve the
-best-quality results.
-
-\subsection{Color Space}
-The term color space refers to the entire sum of colors that can be
-represented within the said medium. For our purposes, the three main color
-spaces are Grayscale, RGB (red/green/blue) and CMYK
-(cyan/magenta/yellow/black). RGB is generally used with on-screen graphics,
-whereas CMYK is used for printing purposes.
-
-All color figures should be generated in RGB or CMYK color space. Grayscale
-images should be submitted in Grayscale color space. Line art may be
-provided in grayscale OR bitmap colorspace. Note that ``bitmap colorspace''
-and ``bitmap file format'' are not the same thing. When bitmap color space
-is selected, .TIF/.TIFF/.PNG are the recommended file formats.
-
-\subsection{Accepted Fonts Within Figures}
-When preparing your graphics IEEE suggests that you use of one of the
-following Open Type fonts: Times New Roman, Helvetica, Arial, Cambria, and
-Symbol. If you are supplying EPS, PS, or PDF files all fonts must be
-embedded. Some fonts may only be native to your operating system; without
-the fonts embedded, parts of the graphic may be distorted or missing.
-
-A safe option when finalizing your figures is to strip out the fonts before
-you save the files, creating ``outline'' type. This converts fonts to
-artwork what will appear uniformly on any screen.
-
-\subsection{Using Labels Within Figures}
-
-\subsubsection{Figure Axis labels }
-Figure axis labels are often a source of confusion. Use words rather than
-symbols. As an example, write the quantity ``Magnetization,'' or
-``Magnetization M,'' not just ``M.'' Put units in parentheses. Do not label
-axes only with units. As in Fig. 1, for example, write ``Magnetization
-(A/m)'' or ``Magnetization (A$\cdot$m$^{-1}$),'' not just ``A/m.'' Do not label axes with a ratio of quantities and
-units. For example, write ``Temperature (K),'' not ``Temperature/K.''
-
-Multipliers can be especially confusing. Write ``Magnetization (kA/m)'' or
-``Magnetization (10$^{3}$ A/m).'' Do not write ``Magnetization
-(A/m)$\,\times\,$1000'' because the reader would not know whether the top
-axis label in Fig. 1 meant 16000 A/m or 0.016 A/m. Figure labels should be
-legible, approximately 8 to 10 point type.
-
-\subsubsection{Subfigure Labels in Multipart Figures and Tables}
-Multipart figures should be combined and labeled before final submission.
-Labels should appear centered below each subfigure in 8 point Times New
-Roman font in the format of (a) (b) (c).
-
-\subsection{File Naming}
-Figures (line artwork or photographs) should be named starting with the
-first 5 letters of the author's last name. The next characters in the
-filename should be the number that represents the sequential
-location of this image in your article. For example, in author
-``Anderson's'' paper, the first three figures would be named ander1.tif,
-ander2.tif, and ander3.ps.
-
-Tables should contain only the body of the table (not the caption) and
-should be named similarly to figures, except that `.t' is inserted
-in-between the author's name and the table number. For example, author
-Anderson's first three tables would be named ander.t1.tif, ander.t2.ps,
-ander.t3.eps.
-
-Author photographs should be named using the first five characters of the
-pictured author's last name. For example, four author photographs for a
-paper may be named: oppen.ps, moshc.tif, chen.eps, and duran.pdf.
-
-If two authors or more have the same last name, their first initial(s) can
-be substituted for the fifth, fourth, third$\ldots$ letters of their surname
-until the degree where there is differentiation. For example, two authors
-Michael and Monica Oppenheimer's photos would be named oppmi.tif, and
-oppmo.eps.
-
-\subsection{Referencing a Figure or Table Within Your Paper}
-When referencing your figures and tables within your paper, use the
-abbreviation ``Fig.'' even at the beginning of a sentence. Figures should be numbered with Arabic Numerals.
-Do not abbreviate ``Table.'' Tables should be numbered with Roman Numerals.
-
-\subsection{Submitting Your Graphics}
-Because IEEE will do the final formatting of your paper,
-you do not need to position figures and tables at the top and bottom of each
-column. In fact, all figures, figure captions, and tables can be placed at
-the end of your paper. In addition to, or even in lieu of submitting figures
-within your final manuscript, figures should be submitted individually,
-separate from the manuscript in one of the file formats listed above in
-Section \ref{formats}. Place figure captions below the figures; place table titles
-above the tables. Please do not include captions as part of the figures, or
-put them in ``text boxes'' linked to the figures. Also, do not place borders
-around the outside of your figures.
-
-\subsection{Color Processing/Printing in IEEE Journals}
-All IEEE Transactions, Journals, and Letters allow an author to publish
-color figures on IEEE {\it Xplore}$\circledR$\ at no charge, and automatically
-convert them to grayscale for print versions. In most journals, figures and
-tables may alternatively be printed in color if an author chooses to do so.
-Please note that this service comes at an extra expense to the author. If
-you intend to have print color graphics, include a note with your final
-paper indicating which figures or tables you would like to be handled that
-way, and stating that you are willing to pay the additional fee.
+\subsection{Datasets}
+	The CASIA V2 dataset, created by the Institute of Automation at the Chinese Academy of Sciences, CASIA, is one of the more general resources for research in the area of image forgery detection. Designed to support studies on image tampering, it includes manipulative techniques such as splicing, copy-move forgery, and other methods.The Table~\ref{casiav2overview}: outlines the details of the dataset and gives us an overview of what the dataset contains. The dataset is a very diverse collection of 12,614 images of roughly equal amounts of authentic and tampered examples from various categories such as nature, animals, objects, and urban settings. Such diversity will enable models trained with CASIA V2 to generalize rather well across different scenarios. There are also ground truth masks provided for every tampered image in the dataset, highlighting manipulated regions and thus making the dataset indispensable for supervised learning tasks and performance evaluation. The resolution of the images also varies to reflect real-world conditions, as images naturally come from different devices and sources.CASIA V2 has a variety of applications, including training and validation of image forgery detection models, testing of pre-processing techniques such as Error Level Analysis, and benchmarking deep learning architectures like CNNs for forgery classification. Features such as these make it invaluable in the field of digital forensics and research on image authenticity.
 
 \section{Conclusion}
 This study is essential in maintaining integrity is crucial in fields like Law enforcement, Cyber security, and Legal investigations. In this project, we aimed to design a robust system capable of determining whether an image is tampered with. The research compares the performance of two widely known CNN models, VGG16 and ResNet50, with traditional preprocessing methods like ELA and data augmentation. The project concludes with viable results that taking colour inconsistencies and compression differences significantly improves model capability compared to conventional grayscale-based ELA methods.The system can be integrated into social media to moderate content in real-time, flagging misleading images and advancing platform integrity. In journalism, it makes sure that media is authentic by verifying images before publication; this helps in debunking fake news and fosters ethical reporting as a way of maintaining the public's trust in digital journalism.Although promising performance may be seen in the CASIA v2 dataset, it does not generalize upon exposure to other datasets or real-world scenarios. This needs to be handled in future work by enrichment of the dataset with diversity and updates for further strengthening the resistance and longevity of the model. Moreover, interpreting it with Explainable AI by using Grad-CAM will illustrate the regions of interest influential in the model's choices for transparent decisions and gaining the trust of the users.
