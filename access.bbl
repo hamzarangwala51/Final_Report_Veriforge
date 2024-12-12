@@ -21,8 +21,52 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{chandio2022precise}
-A.~Chandio, G.~Gui, T.~Kumar, I.~Ullah, R.~Ranjbarzadeh, A.~M. Roy, A.~Hussain,
-  and Y.~Shen, ``Precise single-stage detector,'' 2022.
+\bibitem{gupta2022detection}
+A.~Gupta, R.~Joshi, and R.~Laban, ``Detection of tool based edited images from
+  error level analysis and convolutional neural network,'' \emph{arXiv preprint
+  arXiv:2204.09075}, 2022.
+
+\bibitem{kaur2019weak}
+A.~Kaur, D.~Chahal, and L.~Kharb, ``Weak form efficiency of currency futures:
+  Evidence from india,'' in \emph{2019 International Conference on Computing,
+  Communication, and Intelligent Systems (ICCCIS)}.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2019, pp. 30--35.
+
+\bibitem{singh2021image}
+A.~Singh and J.~Singh, ``Image forgery detection using deep neural network,''
+  in \emph{2021 8th International conference on signal processing and
+  integrated networks (SPIN)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2021, pp. 504--509.
+
+\bibitem{7412439}
+N.~B.~A. Warif, M.~Y.~I. Idris, A.~W.~A. Wahab, and R.~Salleh, ``An evaluation
+  of error level analysis in image forensics,'' in \emph{2015 5th IEEE
+  International Conference on System Engineering and Technology (ICSET)}, 2015,
+  pp. 23--28.
+
+\bibitem{simonyan2015deepconvolutionalnetworkslargescale}
+\BIBentryALTinterwordspacing
+K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
+  large-scale image recognition,'' 2015. [Online]. Available:
+  \url{https://arxiv.org/abs/1409.1556}
+\BIBentrySTDinterwordspacing
+
+\bibitem{thepade2021image}
+S.~D. Thepade, S.~Bhandari, C.~Bagde, R.~Chaware, and K.~Lodha, ``Image forgery
+  detection using machine learning with fusion of global and local thepade's
+  sbtc features,'' in \emph{2021 International Conference on Disruptive
+  Technologies for Multi-Disciplinary Research and Applications (CENTCON)},
+  vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2021, pp. 234--238.
+
+\bibitem{han2020scene}
+S.~Han, W.~Gao, Y.~Wan, and Y.~Wu, ``Scene-unified image translation for visual
+  localization,'' in \emph{2020 IEEE International Conference on Image
+  Processing (ICIP)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2020, pp.
+  2266--2270.
+
+\bibitem{he2016deep}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
+  recognition,'' in \emph{Proceedings of the IEEE conference on computer vision
+  and pattern recognition}, 2016, pp. 770--778.
 
 \end{thebibliography}
