@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.11)  12 DEC 2024 16:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.11)  12 DEC 2024 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -599,36 +599,36 @@ Package hyperref Info: Link coloring ON on input line 18.
 \@outlinefile=\write3
 \openout3 = `access.out'.
 
-<bullet.png, id=51, 12.045pt x 35.38219pt>
+<bullet.png, id=63, 12.045pt x 35.38219pt>
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 46.
+Package pdftex.def Info: bullet.png  used on input line 40.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 51.
+Package pdftex.def Info: bullet.png  used on input line 45.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
 
 
 (C:\Users\hamza\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
 
 
 (C:\Users\hamza\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Calculating math sizes for size <9.9> on input line 58.
-LaTeX Font Info:    Calculating math sizes for size <6.6> on input line 58.
+LaTeX Font Info:    Calculating math sizes for size <9.9> on input line 52.
+LaTeX Font Info:    Calculating math sizes for size <6.6> on input line 52.
 
-Overfull \hbox (9.2679pt too wide) in paragraph at lines 58--58
+Overfull \hbox (9.2679pt too wide) in paragraph at lines 52--52
 []  
  []
 
 
-Overfull \hbox (9.2679pt too wide) in paragraph at lines 58--58
+Overfull \hbox (9.2679pt too wide) in paragraph at lines 52--52
 []  
  []
 
@@ -638,10 +638,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<logo.png, id=55, 206.27063pt x 53.44969pt>
+<logo.png, id=68, 206.27063pt x 53.44969pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 64.
+Package pdftex.def Info: logo.png  used on input line 60.
 (pdftex.def)             Requested size: 91.32pt x 23.66309pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -667,20 +667,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
  <./logo.png> <./bullet.png>]
-<Base_Model.png, id=76, 469.755pt x 196.3335pt>
+<Base_Model.png, id=88, 469.755pt x 196.3335pt>
 File: Base_Model.png Graphic file (type png)
 <use Base_Model.png>
-Package pdftex.def Info: Base_Model.png  used on input line 91.
+Package pdftex.def Info: Base_Model.png  used on input line 85.
 (pdftex.def)             Requested size: 505.12177pt x 211.1143pt.
-<notaglinelogo.png, id=78, 169.38281pt x 42.91031pt>
+<notaglinelogo.png, id=90, 169.38281pt x 42.91031pt>
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 101.
+Package pdftex.def Info: notaglinelogo.png  used on input line 97.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 101.
+(Font)              using `T1/formata/m/it' instead on input line 97.
 
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -703,11 +703,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 110.
+(Font)              using `T1/formata/m/it' instead on input line 106.
 
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 110.
+Package pdftex.def Info: notaglinelogo.png  used on input line 106.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -724,20 +724,25 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[3 <./Base_Model.png>] (access.bbl
-LaTeX Font Info:    Calculating math sizes for size <7.61> on input line 51.
-
-
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
-
+[3 <./Base_Model.png>]
+<LOSS_VGG16.png, id=109, 735.34724pt x 374.5995pt>
+File: LOSS_VGG16.png Graphic file (type png)
+<use LOSS_VGG16.png>
+Package pdftex.def Info: LOSS_VGG16.png  used on input line 159.
+(pdftex.def)             Requested size: 227.30324pt x 115.7874pt.
+<VGG16_ACC.png, id=110, 741.36975pt x 379.4175pt>
+File: VGG16_ACC.png Graphic file (type png)
+<use VGG16_ACC.png>
+Package pdftex.def Info: VGG16_ACC.png  used on input line 164.
+(pdftex.def)             Requested size: 227.30324pt x 116.32716pt.
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 71.
+Package pdftex.def Info: notaglinelogo.png  used on input line 173.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
+
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 71.
+(Font)              using `T1/formata/m/it' instead on input line 173.
 
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -754,75 +759,139 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[4])
+[4 <./LOSS_VGG16.png> <./VGG16_ACC.png>]
+<Authentic_img.png, id=121, 256.70906pt x 196.48407pt>
+File: Authentic_img.png Graphic file (type png)
+<use Authentic_img.png>
+Package pdftex.def Info: Authentic_img.png  used on input line 179.
+(pdftex.def)             Requested size: 116.17584pt x 88.92068pt.
+<Forgery_img.png, id=122, 237.13594pt x 196.48407pt>
+File: Forgery_img.png Graphic file (type png)
+<use Forgery_img.png>
+Package pdftex.def Info: Forgery_img.png  used on input line 184.
+(pdftex.def)             Requested size: 106.07895pt x 87.89233pt.
+<Graph_LOSS.jpg, id=124, 598.48593pt x 312.41719pt>
+File: Graph_LOSS.jpg Graphic file (type jpg)
+<use Graph_LOSS.jpg>
+Package pdftex.def Info: Graph_LOSS.jpg  used on input line 198.
+(pdftex.def)             Requested size: 227.30324pt x 118.65302pt.
+<Graph_ACC.jpg, id=125, 598.48593pt x 319.1925pt>
+File: Graph_ACC.jpg Graphic file (type jpg)
+<use Graph_ACC.jpg>
+Package pdftex.def Info: Graph_ACC.jpg  used on input line 203.
+(pdftex.def)             Requested size: 227.30324pt x 121.22621pt.
+<Confusion_Matrix.jpg, id=127, 488.57532pt x 411.78844pt>
+File: Confusion_Matrix.jpg Graphic file (type jpg)
+<use Confusion_Matrix.jpg>
+Package pdftex.def Info: Confusion_Matrix.jpg  used on input line 216.
+(pdftex.def)             Requested size: 161.64265pt x 136.23618pt.
+<Chart_EM.jpg, id=128, 506.6428pt x 160.34906pt>
+File: Chart_EM.jpg Graphic file (type jpg)
+<use Chart_EM.jpg>
+Package pdftex.def Info: Chart_EM.jpg  used on input line 221.
+(pdftex.def)             Requested size: 161.64265pt x 51.1586pt.
+
+Underfull \hbox (badness 3792) in paragraph at lines 227--228
+[]\T1/times/n/n/10 The im-proved ELA cou-pled with tran-si-tion-ing from
+ []
+
+
+LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
+(Font)              using `T1/formata/m/it' instead on input line 237.
+
+File: notaglinelogo.png Graphic file (type png)
+<use notaglinelogo.png>
+Package pdftex.def Info: notaglinelogo.png  used on input line 237.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[5 <./Authentic_img.png> <./Forgery_img.png> <./Graph_LOSS.jpg> <./Graph_ACC.jp
+g> <./Confusion_Matrix.jpg> <./Chart_EM.jpg>] (access.bbl
+LaTeX Font Info:    Calculating math sizes for size <7.61> on input line 51.
+)
+Overfull \vbox (1.72311pt too high) has occurred while \output is active []
+
+File: notaglinelogo.png Graphic file (type png)
+<use notaglinelogo.png>
+Package pdftex.def Info: notaglinelogo.png  used on input line 336.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
+
+
+LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
+(Font)              using `T1/formata/m/it' instead on input line 336.
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Overfull \hbox (505.12177pt too wide) has occurred while \output is active
+[]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[6]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 252.
+(hyperref)                be the same. Added a new anchor on input line 336.
 
-<author1.png, id=111, 225.84375pt x 282.30469pt>
+<author1.png, id=151, 225.84375pt x 282.30469pt>
 File: author1.png Graphic file (type png)
 <use author1.png>
-Package pdftex.def Info: author1.png  used on input line 252.
+Package pdftex.def Info: author1.png  used on input line 336.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 File: author1.png Graphic file (type png)
 <use author1.png>
-Package pdftex.def Info: author1.png  used on input line 252.
+Package pdftex.def Info: author1.png  used on input line 336.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
-<author2.png, id=114, 225.84375pt x 282.30469pt>
+<author2.png, id=154, 225.84375pt x 282.30469pt>
 File: author2.png Graphic file (type png)
 <use author2.png>
-Package pdftex.def Info: author2.png  used on input line 272.
+Package pdftex.def Info: author2.png  used on input line 356.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 File: author2.png Graphic file (type png)
 <use author2.png>
-Package pdftex.def Info: author2.png  used on input line 272.
+Package pdftex.def Info: author2.png  used on input line 356.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
-
-LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 302.
-
-File: notaglinelogo.png Graphic file (type png)
-<use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 302.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (505.12177pt too wide) has occurred while \output is active
-[]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-[5 <./author1.png> <./author2.png>]
-<author3.png, id=125, 225.84375pt x 282.30469pt>
+<author3.png, id=157, 225.84375pt x 282.30469pt>
 File: author3.png Graphic file (type png)
 <use author3.png>
-Package pdftex.def Info: author3.png  used on input line 302.
+Package pdftex.def Info: author3.png  used on input line 386.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 File: author3.png Graphic file (type png)
 <use author3.png>
-Package pdftex.def Info: author3.png  used on input line 302.
+Package pdftex.def Info: author3.png  used on input line 386.
 (pdftex.def)             Requested size: 72.27147pt x 90.33934pt.
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 321.
+Package pdftex.def Info: bullet.png  used on input line 405.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
-File: notaglinelogo.png Graphic file (type png)
-<use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 323.
-(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
-
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 323.
+(Font)              using `T1/formata/m/it' instead on input line 407.
 
+File: notaglinelogo.png Graphic file (type png)
+<use notaglinelogo.png>
+Package pdftex.def Info: notaglinelogo.png  used on input line 407.
+(pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
 []
@@ -838,33 +907,32 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[6 <./author3.png>] (access.aux)
+[7 <./author1.png> <./author2.png> <./author3.png>] (access.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `access.out' has not changed.
-(rerunfilecheck)             Checksum: A44B69595865030D12E12F2BF25D2A88;1761.
+(rerunfilecheck)             Checksum: FF8D235C249FFFB62C3B104E584E527E;2514.
  ) 
 Here is how much of TeX's memory you used:
- 11815 strings out of 474486
- 187146 string characters out of 5743755
- 1952542 words of memory out of 5000000
- 33882 multiletter control sequences out of 15000+600000
+ 11891 strings out of 474486
+ 188671 string characters out of 5743755
+ 1948542 words of memory out of 5000000
+ 33949 multiletter control sequences out of 15000+600000
  640224 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,1720b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1720b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{section*.2} has been referenced but does not exist,
  replaced by a fixed one
 
-<C:/Users/hamza/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-mi10.pfb><./t1-formata-bold.pfb><./t1-formata-condmedium.pfb><./t1-formata-medi
-um.pfb><./t1-formata-mediumitalic.pfb><./t1-formata-regular.pfb><./t1-giovannis
-td-bookitalic.pfb><./t1-times-bold.pfb><./t1-times-italic.pfb><./t1-times.pfb>
-Output written on access.pdf (6 pages, 621355 bytes).
+<./t1-formata-bold.pfb><./t1-formata-condmedium.pfb><./t1-formata-medium.pfb><.
+/t1-formata-mediumitalic.pfb><./t1-formata-regular.pfb><./t1-giovannistd-bookit
+alic.pfb><./t1-times-bold.pfb><./t1-times-italic.pfb><./t1-times.pfb>
+Output written on access.pdf (7 pages, 1288500 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
+ 240 words of extra memory for PDF output out of 10000 (max. 10000000)
 

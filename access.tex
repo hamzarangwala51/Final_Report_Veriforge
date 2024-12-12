@@ -19,28 +19,22 @@
 \history{Date of publication xxxx 00, 0000, date of current version xxxx 00, 0000.}
 \doi{10.1109/ACCESS.2023.0322000}
 
-\title{Preparation of Papers for IEEE ACCESS}
-\author{\uppercase{First A. Author}\authorrefmark{1}, \IEEEmembership{Fellow, IEEE},
-\uppercase{Second B. Author}\authorrefmark{2}, and Third C. Author,
-Jr.\authorrefmark{3},
-\IEEEmembership{Member, IEEE}}
+\title{Veriforge:An Image Forgery Detection Model}
+\author{\uppercase{Rishikesh Ravi}\authorrefmark{1},
+\uppercase{Hamza Rangwala}\authorrefmark{2},
+\uppercase{Ayaz Afzal}\authorrefmark{3} and \uppercase{Trushit Patel} \authorrefmark{4},
+}
 
-\address[1]{National Institute of Standards and
-Technology, Boulder, CO 80305 USA (e-mail: author@boulder.nist.gov)}
-\address[2]{Department of Physics, Colorado State University, Fort Collins,
-CO 80523 USA (e-mail: author@lamar.colostate.edu)}
-\address[3]{Electrical Engineering Department, University of Colorado, Boulder, CO
-80309 USA}
-\tfootnote{This paragraph of the first footnote will contain support
-information, including sponsor and financial support acknowledgment. For
-example, ``This work was supported in part by the U.S. Department of
-Commerce under Grant BS123456.''}
+\address[1]{Wilfrid Laurier University, Waterloo ON Canada (email:rish8180@mylaurier.ca)}
+\address[2]{Wilfrid Laurier University, Waterloo ON Canada (email:rang8720@mylaurier.ca)}
+\address[3]{Wilfrid Laurier University, Waterloo ON Canada (email:afza9880@mylaurier.ca)}
+\address[4]{Wilfrid Laurier University, Waterloo ON Canada (email:pate9410@mylaurier.ca)}
+
 
 \markboth
 {Author \headeretal: Preparation of Papers for IEEE TRANSACTIONS and JOURNALS}
 {Author \headeretal: Preparation of Papers for IEEE TRANSACTIONS and JOURNALS}
 
-\corresp{Corresponding author: First A. Author (e-mail: author@ boulder.nist.gov).}
 
 
 \begin{abstract}
@@ -141,6 +135,101 @@ It achieves a very good trade-off among accuracy, training efficiency, and robus
 	\caption{Overview of the CASIA TIDE v2.0 Dataset}
 	\label{casiav2overview}
 \end{table}
+ \subsection{Results Evaluation}
+  This section compiles the quantitative results and presents an analysis of the project outcomes. The performance of ResNet50 and VGG16 CNN models trained on CASIA V2 dataset by using traditional methods like ELA will be judged on Accuracy and F1 metrics.Accuracy measures the overall correctness of the model's predictions. At the same time, the F1 score represents the balance between precision and recall, which is suited for imbalanced datasets. Or in other words, it shows the likelihood that the model correctly classifies an image with its true label.
+  \begin{table}[h!]
+  	\centering
+  	\begin{tabular}{@{}lcc@{}}
+  		\toprule
+  		\textbf{Model Variant}           & \textbf{Accuracy} & \textbf{F1 Score} \\ \midrule
+  		VGG16 + ELA                      & 83\%              & 0.86              \\
+  		ResNet50 + Improved ELA          & 89\%              & 0.92              \\ \bottomrule
+  	\end{tabular}
+  	\caption{Quantitative Results}
+  	\label{tab:quantitative-results}
+  \end{table}
+  
+  According to the qualitative results, RestNet50, combined with improved ELA, performed better than VGG16, which used traditional ELA.
+  
+  \subsection{Analysis of the Initial VGG16 Model}
+    \begin{figure}[h!]
+  	\centering
+  	\begin{minipage}{0.45\textwidth}
+  		\centering
+  		\includegraphics[width=\linewidth]{LOSS_VGG16.png}
+  	\end{minipage}
+  	\hfill
+  	\begin{minipage}{0.45\textwidth}
+  		\centering
+  		\includegraphics[width=\linewidth]{VGG16_ACC.png}
+  	\end{minipage}
+  	\caption{VGG16 Model: Loss and Accuracy Graphs}
+  	\label{fig:vgg16-graphs}
+  \end{figure}
+  
+  The first prototyping at the earlier stages of the project used a VGG16 CNN model combined with traditional ELA preprocessing. This approach focused on finding edges to detect forged regions on a grey-scale-converted image. Although this yielded a promising 83\% in validation accuracy, the training and validation graphs were too inconsistent and abrupt, making the F1 score stand at a low of 0.86. That meant the balance between precision and recall had to be promoted, reducing the higher number of false positives and false negatives, which could be achieved by using more sophisticated preprocessing techniques. The model VGG16 has anomalies shown in Figure  due to sudden changes and also huge differences between Training and Validation accuracy graphs. Because the model failed to generalise into a valid test set, it could be defined that the model went to overfit while in training, also justified with the low F1 value of the VGG16 model
+  
+  Figure~\ref{fig:vgg16-graphs} reveals inconsistencies, with abrupt variations and a wide gap between the Training and Validation accuracy graphs for the VGG16 model. As the model failed to generalise on the validation test set, it can be termed that the model went overfitting during the training, which is evident by the low F1 score of the VGG16 model.
+  
+  \subsection{ResNet50 Model and Improved ELA with Evaluation Metrics}
+    \begin{figure}[h!]
+  	\centering
+  	\begin{minipage}{0.23\textwidth}
+  		\centering
+  		\includegraphics[width=\linewidth]{Authentic_img.png}
+  	\end{minipage}
+  	\hfill
+  	\begin{minipage}{0.21\textwidth}
+  		\centering
+  		\includegraphics[width=\linewidth]{Forgery_img.png}
+  		
+  	\end{minipage}
+  	\caption{Authentic and Forgery Predicted Label images}
+  	\label{fig:Authentic_and_ELA}
+  \end{figure}
+  
+  Resnet50 with an enhanced ELA preprocessing was implemented to address these limitations. The Improved preprocessing technique modified the ELA to analyse the RGB channels instead of grayscale. This allowed the model to detect colour discrepancies and variations in JPEG compression artefacts which are more effective in detecting forgery compared to finding edges.
+  The improved ELA led to the clear identification of tampered regions, as shown in Fig~\ref{fig:Authentic_and_ELA}.
+  
+  \begin{figure}[h!]
+  	\centering
+  	\begin{minipage}{0.45\textwidth}
+  		\centering
+  		\includegraphics[width=\linewidth]{Graph_LOSS.jpg}
+  	\end{minipage}
+  	\hfill
+  	\begin{minipage}{0.45\textwidth}
+  		\centering
+  		\includegraphics[width=\linewidth]{Graph_ACC.jpg}
+  		
+  	\end{minipage}
+  	\caption{Resnet50 Model: Loss and Accuracy Graphs}
+  	\label{fig:Resnet50 Loss and Accuracy Graphs}
+  \end{figure}
+  Besides that, compared to VGG16, several advantages have been gained with the ResNet50 architecture. Instead of flattening the feature maps, global average pooling was used that reduces overfitting because of minimized trainable parameters. More than that, batch normalisation layers stabilize training by normalizing the inputs, and dropout with various intensities added to the regularization helped reduce overfitting. With these changes, training-validation accuracy curves were smoother and more convergent, as depicted in Fig ~\ref{fig:Resnet50 Loss and Accuracy Graphs}.
+ 
+ 
+ \begin{figure}[h!]
+ 	\centering
+ 	\begin{minipage}{0.32\textwidth}
+ 		\centering
+ 		\includegraphics[width=\linewidth]{Confusion_Matrix.jpg}
+ 	\end{minipage}
+ 	\hfill
+ 	\begin{minipage}{0.32\textwidth}
+ 		\centering
+ 		\includegraphics[width=\linewidth]{Chart_EM.jpg}
+ 		
+ 	\end{minipage}
+ 	\caption{Confusion Matrix and Evaluation Chart}
+ 	\label{fig:Confusion Matrix}
+ \end{figure}
+ The improved ELA coupled with transitioning from VGG16 to Resnet50 significantly reduced the number of false positives. Smoothening of both the validation and training accuracy curves showed reduced overfitting compared to the curves of the VGG16 model. The resultant 89\% accuracy and 0.92 weighted F1 score reflect the better generalization capability of the model compared to VGG16. A higher F1 score indicated a balanced recall and precision where false positives and false negatives are minimised as evident in Fig ~\ref{fig:Confusion Matrix}. 
+ 
+ 
+ It is noteworthy to mention that data augmentation techniques – rotation, flip, zoom, width shift height shift etc – when applied did not have any effect on forged images. The best possible explanation for this phenomenon is that data augmentation does not present any variation in the forged region.After finalising the model configuration, training, and validation, it was programmatically uploaded to Hugging Face, from where it would be remotely instantiated in the backend service layer using the API provided by Hugging Face. Python Django was used to create a backend application to serve user requests, process the images present in the user requests, predict the labels, and respond with the predicted results.
+  
+
 
 \section{Conclusion}
 This study is essential in maintaining integrity is crucial in fields like Law enforcement, Cyber security, and Legal investigations. In this project, we aimed to design a robust system capable of determining whether an image is tampered with. The research compares the performance of two widely known CNN models, VGG16 and ResNet50, with traditional preprocessing methods like ELA and data augmentation. The project concludes with viable results that taking colour inconsistencies and compression differences significantly improves model capability compared to conventional grayscale-based ELA methods.The system can be integrated into social media to moderate content in real-time, flagging misleading images and advancing platform integrity. In journalism, it makes sure that media is authentic by verifying images before publication; this helps in debunking fake news and fosters ethical reporting as a way of maintaining the public's trust in digital journalism.Although promising performance may be seen in the CASIA v2 dataset, it does not generalize upon exposure to other datasets or real-world scenarios. This needs to be handled in future work by enrichment of the dataset with diversity and updates for further strengthening the resistance and longevity of the model. Moreover, interpreting it with Explainable AI by using Grad-CAM will illustrate the regions of interest influential in the model's choices for transparent decisions and gaining the trust of the users.
@@ -150,12 +239,7 @@ The dataset and code for further research are available \href{https://www.kaggle
 
 
 \section*{Acknowledgment}
-The preferred spelling of the word ``acknowledgment'' in American English is
-without an ``e'' after the ``g.'' Use the singular heading even if you have
-many acknowledgments. Avoid expressions such as ``One of us (S.B.A.) would
-like to thank $\ldots$ .'' Instead, write ``F. A. Author thanks $\ldots$ .'' In most
-cases, sponsor and financial support acknowledgments are placed in the
-unnumbered footnote on the first page, not here.
+We would like to express our sincere gratitude to Prof. ANK Zaman for his invaluable guidance and support throughout the course of this research. His insightful suggestions, expert advice, and continuous encouragement significantly contributed to the successful completion of this project. We also appreciate his assistance in refining our methodology and providing constructive feedback, which greatly enhanced the quality of our work. This research would not have been possible without his mentorship.
 
 \balance
 \bibliographystyle{IEEEtran}
