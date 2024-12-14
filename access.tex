@@ -52,9 +52,9 @@ For customization with regard to binary classification, some custom layers are a
 
 \section{Introduction}
 \label{sec:introduction}
-\PARstart{I}{n} this digital era, where information is usually imparted through the means of digitization, a tampered image might start a wildfire of misinformation, controversies, and disasters in a lot of sectors. The more use of social media escalates the scale of it, which calls for this challenge to be taken seriously.The instances of tampered images being used for spreading fake news, malicing individuals or organizations, and manipulating public opinion have started becoming alarmingly common. A serious issue of this aspect, our research focuses on VeriForge, which is a model designed for the detection and exposure of image tampering using the powerful deep learning and Error Level Analysis~\cite{gupta2022detection}. This innovative approach is targeted at offering an effective solution in finding discrepancies in digital images and building trust in visual content. But accessibility to sophisticated image editing software has put the art of doctoring images within everybody's reach, irrespective of any kind of technical expertise. For that reason, it has become an increasingly demanding task to differentiate between original and tampered images by commoners, but also by professionals in vital fields like law and order or journalism. But available techniques of image tampering detection, though at one's fingertips, are not short-circuited by numerous limitations. Most of the known methods are outdated, slowing down, and cannot find a complex type of manipulation. Nowadays, there is a serious demand to create modern and effective methods which could cope with complications arising in image forgery techniques~\cite{kaur2019weak}.
+\PARstart{I}{n} this digital era, where information is usually imparted through the means of digitization, a tampered image might start a wildfire of misinformation, controversies, and disasters in a lot of sectors.Over the last few decades, deep learning has grown to be one of the strongest and leading methods for the solution of challenging problems arising in numerous fields.~\cite{10035377}The more use of social media escalates the scale of it, which calls for this challenge to be taken seriously.The instances of tampered images being used for spreading fake news, malicing individuals or organizations, and manipulating public opinion have started becoming alarmingly common. Images manipulated through image processing tools or even completely fabricated with the help of AI, in order to distort the truth and mislead people or clinch wrongful convictions in a court of law.~\cite{8755865}.A serious issue of this aspect, our research focuses on VeriForge, which is a model designed for the detection and exposure of image tampering using the powerful deep learning and Error Level Analysis~\cite{gupta2022detection}. This innovative approach is targeted at offering an effective solution in finding discrepancies in digital images and building trust in visual content. But accessibility to sophisticated image editing software has put the art of doctoring images within everybody's reach, irrespective of any kind of technical expertise. For that reason, it has become an increasingly demanding task to differentiate between original and tampered images by commoners, but also by professionals in vital fields like law and order or journalism. But available techniques of image tampering detection, though at one's fingertips, are not short-circuited by numerous limitations. Most of the known methods are outdated, slowing down, and cannot find a complex type of manipulation. Nowadays, there is a serious demand to create modern and effective methods which could cope with complications arising in image forgery techniques~\cite{kaur2019weak}.
 
-VeriForge fills this gap by using the synergy of traditional forensic methods and deep learning. ELA, for example, is a well-established method in forensics: it underlines inconsistencies between image compression levels, hence highlighting the image anomalies caused by editing~\cite{singh2021image}. VeriForge couples ELA with deep learning to extract meaningful features from these discrepancies in a way that has allowed the attainment of high accuracy enabled by advanced neural network architecture. It allows VeriForge to find the tampered images with quite an intelligent attack.
+An automatic computer-based system is required to be developed which can identify the originality of input image~\cite{9404748},VeriForge fills this gap by using the synergy of traditional forensic methods and deep learning. ELA, for example, is a well-established method in forensics: it underlines inconsistencies between image compression levels, hence highlighting the image anomalies caused by editing~\cite{singh2021image}. VeriForge couples ELA with deep learning to extract meaningful features from these discrepancies in a way that has allowed the attainment of high accuracy enabled by advanced neural network architecture. It allows VeriForge to find the tampered images with quite an intelligent attack.
 
 For the training and verification of VeriForge, we utilize CASIA V2, a database of well-labeled images in their original and forged aspects. In this database, tampering is performed manually with several image editing tools; thus, it is one of the good sources for training a model to detect different types of tampering~\cite{7412439}. This is also ensured by the great variety of images in the dataset, thus the model generalizes well to unseen data, avoiding overfitting and improving its application in real-world scenarios.
 
@@ -65,10 +65,85 @@ The general objective of the work is to protect the integrity of digital content
 
 In a nutshell, VeriForge is a leap into the future of image tampering detection: it merges classical forensic techniques-such as ELA-with the latest powers of deep learning for an emerging need to have reliable tools safeguarding digital content in this world where visual communication is well on its way to dominating other forms.
 
+\section{Literature Review}
+
+Image forgery detection has become a very important area of research because of the increasing prevalence of digital image manipulation and its possible misuse in spreading misinformation, undermining trust in media, and enabling cybercrime. Social media platforms have emerged as one of the most used mediums for sharing content. Inappropriate images shared on these platforms can lead to legal consequences. Image manipulation techniques such as copy-move or splicing are standard practices.~\cite{10747914} So, there is a need to develop techniques to validate integrity and authenticity of the images, as this image is considered as the evidence in various fields like in investigation or in medical field as medical record or as financial documents, etc.~\cite{9670931}
+
+\subsection{Traditional Approaches to Image Forgery Detection}
+Image manipulation detection is different from traditional semantic object detection because it pays more attention to tampering artifacts than to image content.~\cite{zhou2018learning}
+Traditional approaches rely on the inherent changes introduced by manipulation tools.To enhance performance of ELA, data augmentation techniques and meticulous hyperparameter tuning are employed, along with the exploration of alternative model architectures.~\cite{boustany2024image}
+ Traditional approached involved resampling features are used to capture artifacts, such as JPEG quality loss, upsampling, downsampling, rotation, and shearing.~\cite{8626149} 
+ 
+ \subsubsection{Copy-move Forgery} 
+ The most frequent form of image fraud is called a copy-move forgery, where a portion of the original image is copied and pasted in a different spot within the same image~\cite{10151341}. It simply entails copying picture blocks into the same image and concealing vital information or objects from view. ~\cite{chou2018copy} a copy move forgery detection method is proposed in this paper using regional Gestalt wavelet analysis structures, which draw upon the rotation invariant ability of uniform local binary patterns and a high-performance texture analysis ability of Gaussian filters.
+ 
+ \subsubsection{Image splicing Forgery} 
+ Image splicing is a picture compositing technique that involves joining image fragments from the same or separate images without further post-processing, such as smoothing the borders between the pieces.Image splicing forgery, where parts of one image are pasted and then copied into another image to merge a new image.~\cite{8456113} Image splicing is fundamentally different from copy-move in the sense that the pasted region cannot be found elsewhere within the same image.~\cite{8631389}
+ 
+ \begin{figure}[h!]
+ 	\centering
+ 	\begin{minipage}{0.45\textwidth}
+ 		\centering
+ 		\includegraphics[width=\linewidth]{Slicing_Image.png}
+ 	\end{minipage}
+ 	\caption{Image Slicing Mechanism, adapted from \cite{8631389}}
+ 	\label{Slicing Image Mechanism}
+ \end{figure}
+
+\subsection{Machine Learning Techniques}
+
+Early machine learning models, such as those using Gaussian Discriminant Analysis (GDA) or Support Vector Machines (SVMs), have been leveraged to classify images based on handcrafted features like Local Binary Patterns (LBP) or texture characteristics. Although promising, these models are often constrained by the limited generalizability of their features to diverse tampering types.
+
+\subsection{CNN Architectures} 
+
+Recent works involving VGG-16, ResNet, and Xception demonstrate that deeper architectures perform better in capturing complex patterns; this is evident from the very best performance of models such as ResNet50. A CNN model trained on ELA images outperforms other pre-trained models.~\cite{9885600}. CNN uses a pooling layer which reduces the dimension of the data and serves the dual purpose of reducing the enormous amount of output to be fed into the next input layer and by losing some information, the problem of overfitting is solved.~\cite{9121083}
+
+\subsubsection{Convolution Layer}
+The major function of the convolutional layer is to extract features and to initialize fixed-size kernels to scan the input matrix. The size of the kernels and the stride of sliding are set when a network is to be constructed.
+Let \( a_{ij} \) denote the pixel at the \( i \)-th line and the \( j \)-th column of a feature map, the computation of which follows:
+\begin{equation*} a_{i,j}=f(\sum_{m=0}^{\mathrm{M}}\sum_{n=0}^{\mathrm{N}}W_{m,n}X_{i+m,j+n}+W_{b}) \tag{1} \end{equation*}
+
+where \( x_{ij} \) denotes the pixel at \((i, j)\) of the input image, \( W_{m,n} \) denotes the shared weight at the corresponding position of filters, \( W_{b} \) is the bias of the filters, and \( f \) denotes the activation function. The size of the kernel is \( M \times N \), meaning that \( m \) ranges from \( 0 \) to \( M \) and \( n \) ranges from \( 0 \) to \( N \).~\cite{8456123}
 
 
+\subsubsection{ReLU Function}
+The method proposed by ~\cite{selvaraju2016grad} which uses gradient information flowed from the final convolutional layer in our ResNet-50 model to provide, for each pixel in the image, the amount of contribution in final class decision, resulting in an RGB gradient map in which dark red represents areas with high contribution to final decision and dark blue denotes otherwise.
 
-\section{PROPOSED METHOD}
+The gradient map G belonging to Ru×v, of width u and height v, given a target class t is
+
+\begin{align*}&\quad \displaystyle \mathbf{G}^{t}=ReLU\overbrace{\left(\sum\limits_{\kappa}\alpha_{\kappa}^{t}A^{\kappa}\right)}^{\text{linear combination}}, \tag{2}\\ & \alpha_{\kappa}^{t}= \overbrace{\hat{\frac{1}{Z}\sum_{i}\sum_{j}}}_{\text{global average pooling}} \frac{\partial y^{t}}{\underbrace{\partial A_{ij}^{\kappa}}_{\text{gradients via backprop}}} \tag{3} \end{align*}
+
+where \( A^{\kappa} \) represents the activation map of the \(\kappa\)-th feature channel of the last convolutional layer. The coefficients \( \alpha_{\kappa}^{t} \) determine the importance of each feature channel for the target class \( t \) and are computed using:
+
+- \( Z \) is the normalization factor, equal to the total number of elements in the activation map (\( Z = u \times v \)),
+- \( \frac{\partial y^{t}}{\partial A_{ij}^{\kappa}} \) represents the gradients obtained via backpropagation, showing how the change in the activation \( A_{ij}^{\kappa} \) affects the class score \( y^{t} \),
+- The global average pooling (\( \frac{1}{Z} \sum_{i} \sum_{j} \)) aggregates these gradients spatially over the activation map, assigning a single importance weight to each feature channel \( \kappa \).
+
+Only positive contributions of feature maps within ReLU highlight regions supporting the model's prediction for target class \( t \) since ReLU masks negative responses. It combines the information effectively, both in a spatial and feature level, from the activation maps so that the class-relevant region of interest could be well-localized within the input image.
+
+\subsection{Integrating ELA with Deep Learning}
+The ELA of Krawtez ~\cite{krawtez2007pictures} helps to determine the areas in an image at different levels of compression. The method focuses on the lossy compression of the manipulated images to identify them. Original quality itself is a unique feature of the image.The error levels calculated are related to the compression loss. A small change in these error levels implies that the pixel is at its local minima for that particular error rate~\cite{ghai2024deep}.
+ ELA operates as a forensic tool that identifies variations in error levels within compressed images, facilitating the discernment of manipulated regions.~\cite{10627878} In case of alteration, traces are left behind in one way or another. In the process of ELA, we compress the image through a lossy function. In our implementation we use the JPEG format for such a purpose.
+\begin{equation}
+	ELA(n_1, n_2) = \left| X(n_1, n_2) - X_{rc}(n_1, n_2) \right| \tag{4}
+\end{equation}
+
+For each colour channel in the above equation, \( n_1 \) and \( n_2 \) represent the row and the column indices, respectively, \( X \) represents the image that is required to be checked for manipulation, and \( X_{rc} \) represents the recompressed image.
+
+The overall error levels are computed by averaging across all colour channels as given below:
+
+\begin{equation}
+	ELA(n_1, n_2) = \frac{1}{3} \sum_{i=1}^{3} \left| X(n_1, n_2, i) - X_{rc}(n_1, n_2, i) \right|  \tag{5}
+\end{equation}
+where \( i = 1, 2, 3 \) for Red, Green, and Blue (RGB) image.
+
+ Several distinct artifacts arise from the diverse phases of the picture formation process.~\cite{10688184}. The detection of photographic splicing by bringing together the high representation power of Illuminant Maps and Convolutional Neural Networks is a way of learning directly from available training data the most important hints of a forgery. ~\cite{8451227}
+
+
+Our proposed system is based on these insights; it leverages ELA for feature enhancement and ResNet50 for binary classification, Since the RGB model is one of the most popular color models used in image presentation.~\cite{10296670} we use it parallel with ELA thus overcoming the limitations of earlier models.While the traditional methods, such as ELA, give valuable insights into the problem, integrating it with deep architectures such as ResNet50 can therefore provide a strong solution against modern challenges. Our contribution, therefore, to this effort continues with Veriforge: a method that joins strengths from both ELA and deep learning, providing great accuracy and robustness on CASIA V2.
+
+
+\section{Proposed Method}
 
 In this paper, we demonstrate that combining ELA with CNN model while freezing the base layers and adding custom layers to the base model which will provide a significant increase in the robustness of the final model and significantly improve performance of the classification task to detect images, which are tampered. We explore this idea in the context of digital forensics, where the goals are to analyze the images and detect suspicious activity in the field of crime, journalism etc. Since digital forensics helps uncover activities and patterns, determine the root causes of incidents, and establish a chain of evidence admissible in court, it becomes essential to identify, recover, analyze and present digital evidence from electronic devices and digital storage. Additionally, an ELA based model helps in identifying the difference in various layers of the images to help us uncover the underlying changes made to the image that is suspected to be tampered with. The model allows us to help various fields where criminal investigations, legal disputes and cybersecurity incidents occur and images need to be analyzed quicky to help user make quick informed decisions. The following sections outline the details of each step in the process.
 
@@ -107,51 +182,65 @@ It achieves a very good trade-off among accuracy, training efficiency, and robus
 
 
 \section{Results and Analysis}
-	\begin{table}[h!]
+
 \subsection{Datasets}
 	The CASIA V2 dataset, created by the Institute of Automation at the Chinese Academy of Sciences, CASIA, is one of the more general resources for research in the area of image forgery detection. Designed to support studies on image tampering, it includes manipulative techniques such as splicing, copy-move forgery, and other methods.The Table~\ref{casiav2overview} outlines the details of the dataset and gives us an overview of what the dataset contains. The dataset is a very diverse collection of 12,614 images of roughly equal amounts of authentic and tampered examples from various categories such as nature, animals, objects, and urban settings. Such diversity will enable models trained with CASIA V2 to generalize rather well across different scenarios. There are also ground truth masks provided for every tampered image in the dataset, highlighting manipulated regions and thus making the dataset indispensable for supervised learning tasks and performance evaluation.
+	\begin{table}[h!]
+		\centering
+		\setlength{\tabcolsep}{3pt}
+		\vspace{3mm}
+		\begin{tabular}{|p{75pt}|p{150pt}|p{115pt}|}
+			\hline
+			\textbf{Feature}            & \textbf{Description}                                                                 \\ \hline
+			\textbf{Dataset Name}       & CASIA TIDE v2.0                                                                      \\ \hline
+			\textbf{Purpose}            & Designed for research and development in image forgery detection                     \\ \hline
+			\textbf{Released By}        & Chinese Academy of Sciences Institute of Automation (CASIA)                          \\ \hline
+			\textbf{Image Type}         & Digital images, both authentic and tampered                                          \\ \hline
+			\textbf{Number of Images}   & 12,614 images (7,491 authentic and 5,123 tampered)                                   \\ \hline
+			\textbf{Forgery Techniques} & Splicing, copy-move, and other common image tampering techniques                      \\ \hline
+			\textbf{Resolution}         & Varies (typically medium resolution)                                                 \\ \hline
+			\textbf{File Format}        & JPEG (for compressed images)                                                         \\ \hline
+			\textbf{Dataset Structure}  & Contains two folders: one for authentic images and one for tampered images           \\ \hline
+			\textbf{Applications}       & Used for image forgery detection, digital forensics, and tampered image localization research \\ \hline
+			\textbf{Public Availability} & Available for academic and non-commercial use upon request from CASIA               \\ \hline
+		\end{tabular}
+		\caption{Overview of the CASIA TIDE v2.0 Dataset}
+		\label{casiav2overview}
+	\end{table}
+	
 	
 	The resolution of the images also varies to reflect real-world conditions, as images naturally come from different devices and sources.CASIA V2 has a variety of applications, including training and validation of image forgery detection models, testing of pre-processing techniques such as Error Level Analysis, and benchmarking deep learning architectures like CNNs for forgery classification. Features such as these make it invaluable in the field of digital forensics and research on image authenticity.
 	
-
-	\centering
-	\setlength{\tabcolsep}{3pt}
-	\vspace{3mm}
-	\begin{tabular}{|p{75pt}|p{150pt}|p{115pt}|}
-		\hline
-		\textbf{Feature}            & \textbf{Description}                                                                 \\ \hline
-		\textbf{Dataset Name}       & CASIA TIDE v2.0                                                                      \\ \hline
-		\textbf{Purpose}            & Designed for research and development in image forgery detection                     \\ \hline
-		\textbf{Released By}        & Chinese Academy of Sciences Institute of Automation (CASIA)                          \\ \hline
-		\textbf{Image Type}         & Digital images, both authentic and tampered                                          \\ \hline
-		\textbf{Number of Images}   & 12,614 images (7,491 authentic and 5,123 tampered)                                   \\ \hline
-		\textbf{Forgery Techniques} & Splicing, copy-move, and other common image tampering techniques                      \\ \hline
-		\textbf{Resolution}         & Varies (typically medium resolution)                                                 \\ \hline
-		\textbf{File Format}        & JPEG (for compressed images)                                                         \\ \hline
-		\textbf{Dataset Structure}  & Contains two folders: one for authentic images and one for tampered images           \\ \hline
-		\textbf{Applications}       & Used for image forgery detection, digital forensics, and tampered image localization research \\ \hline
-		\textbf{Public Availability} & Available for academic and non-commercial use upon request from CASIA               \\ \hline
-	\end{tabular}
-	\caption{Overview of the CASIA TIDE v2.0 Dataset}
-	\label{casiav2overview}
-\end{table}
- \subsection{Results Evaluation}
+	
+\subsection{Results Evaluation}
+	\begin{table}[h!]
+		\centering
+		\scriptsize % Shrinks the font size
+		\setlength{\tabcolsep}{4pt} % Reduces column spacing
+		\renewcommand{\arraystretch}{1.2} % Adjusts row height for better readability
+		\begin{tabular}{@{}lccc@{}}
+			\toprule
+			\textbf{Reference}            & \textbf{Model}                       & \textbf{Accuracy} \\ \midrule
+			Jabaar et al.  (2021)      & ELA, CNN                             & 93.8\%                          \\
+			Mashaan \& Ahmed  (2023)   & Local Binary Patterns, Tamura        & 96\%                             \\
+			Pandiyan  (2023)           & Xception                             & 95\%                               \\
+			Singh et al.  (2023)       & ELA, CNN                             & 98\%                              \\
+			Geethanjali et al. (2024) & ELA, CNN                             & 95\%                              \\
+			Sarkar et al. (2024)      & SegNet, MobileNet                    & 89\%                            \\
+			Anvekar et al.  (2024)     & CNN                                  & 96\%                               \\
+			Roy et al. (2024)         & Modified MultiResUnet Architecture   & 98\%                               \\ \midrule
+			\textbf{Proposed Method}      & VGG16 + ELA                          & 83\%                          \\
+			\textbf{Proposed Method}      & ResNet50 + Improved ELA              & 89\%                          \\ \bottomrule
+		\end{tabular}
+		\caption{Summary of Different Studies and Quantitative Results}
+		\label{tab:summary-studies}
+	\end{table}
   This section compiles the quantitative results and presents an analysis of the project outcomes. The performance of ResNet50 and VGG16 CNN models trained on CASIA V2 dataset by using traditional methods like ELA will be judged on Accuracy and F1 metrics.Accuracy measures the overall correctness of the model's predictions. At the same time, the F1 score represents the balance between precision and recall, which is suited for imbalanced datasets. Or in other words, it shows the likelihood that the model correctly classifies an image with its true label.
-  \begin{table}[h!]
-  	\centering
-  	\begin{tabular}{@{}lcc@{}}
-  		\toprule
-  		\textbf{Model Variant}           & \textbf{Accuracy} & \textbf{F1 Score} \\ \midrule
-  		VGG16 + ELA                      & 83\%              & 0.86              \\
-  		ResNet50 + Improved ELA          & 89\%              & 0.92              \\ \bottomrule
-  	\end{tabular}
-  	\caption{Quantitative Results}
-  	\label{tab:quantitative-results}
-  \end{table}
+
   
   According to the qualitative results, RestNet50, combined with improved ELA, performed better than VGG16, which used traditional ELA.
   
-  \subsection{Analysis of the Initial VGG16 Model}
+\subsection{Analysis of the Initial VGG16 Model}
     \begin{figure}[h!]
   	\centering
   	\begin{minipage}{0.45\textwidth}
@@ -171,7 +260,7 @@ It achieves a very good trade-off among accuracy, training efficiency, and robus
   
   Figure~\ref{fig:vgg16-graphs} reveals inconsistencies, with abrupt variations and a wide gap between the Training and Validation accuracy graphs for the VGG16 model. As the model failed to generalise on the validation test set, it can be termed that the model went overfitting during the training, which is evident by the low F1 score of the VGG16 model.
   
-  \subsection{ResNet50 Model and Improved ELA with Evaluation Metrics}
+\subsection{ResNet50 Model and Improved ELA with Evaluation Metrics}
     \begin{figure}[h!]
   	\centering
   	\begin{minipage}{0.23\textwidth}
@@ -232,11 +321,8 @@ It achieves a very good trade-off among accuracy, training efficiency, and robus
 
 
 \section{Conclusion}
-This study is essential in maintaining integrity is crucial in fields like Law enforcement, Cyber security, and Legal investigations. In this project, we aimed to design a robust system capable of determining whether an image is tampered with. The research compares the performance of two widely known CNN models, VGG16 and ResNet50, with traditional preprocessing methods like ELA and data augmentation. The project concludes with viable results that taking colour inconsistencies and compression differences significantly improves model capability compared to conventional grayscale-based ELA methods.The system can be integrated into social media to moderate content in real-time, flagging misleading images and advancing platform integrity. In journalism, it makes sure that media is authentic by verifying images before publication; this helps in debunking fake news and fosters ethical reporting as a way of maintaining the public's trust in digital journalism.Although promising performance may be seen in the CASIA v2 dataset, it does not generalize upon exposure to other datasets or real-world scenarios. This needs to be handled in future work by enrichment of the dataset with diversity and updates for further strengthening the resistance and longevity of the model. Moreover, interpreting it with Explainable AI by using Grad-CAM will illustrate the regions of interest influential in the model's choices for transparent decisions and gaining the trust of the users.
+This study is essential in maintaining integrity is crucial in fields like Law enforcement, Cyber security, and Legal investigations. In this project, we aimed to design a robust system capable of determining whether an image is tampered with. The research compares the performance of two widely known CNN models, VGG16 and ResNet50, with traditional preprocessing methods like ELA and data augmentation. The project concludes with viable results that taking colour inconsistencies and compression differences significantly improves model capability compared to conventional grayscale-based ELA methods.The system can be integrated into social media to moderate content in real-time, flagging misleading images and advancing platform integrity.This needs to be handled in future work by enrichment of the dataset with diversity and updates for further strengthening the resistance and longevity of the model. Moreover, interpreting it with Explainable AI by using Grad-CAM will illustrate the regions of interest influential in the model's choices for transparent decisions and gaining the trust of the users.
 The dataset and code for further research are available \href{https://www.kaggle.com/datasets/divg07/casia-20-image-tampering-detection-dataset/data}{[here]} and \href{https://github.com/ayaz168/veriforge}{[repository link]}.
-
-
-
 
 \section*{Acknowledgment}
 We would like to express our sincere gratitude to Prof. ANK Zaman for his invaluable guidance and support throughout the course of this research. His insightful suggestions, expert advice, and continuous encouragement significantly contributed to the successful completion of this project. We also appreciate his assistance in refining our methodology and providing constructive feedback, which greatly enhanced the quality of our work. This research would not have been possible without his mentorship.
@@ -333,73 +419,26 @@ We would like to express our sincere gratitude to Prof. ANK Zaman for his invalu
 %
 %\end{thebibliography}
 
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{author1.png}}]{First A. Author} received the B.S. and M.S. degrees in aerospace engineering from
-the University of Virginia, Charlottesville, in 2001 and the Ph.D. degree in
-mechanical engineering from Drexel University, Philadelphia, PA, in 2008.
-
-From 2001 to 2004, he was a Research Assistant with the Princeton Plasma
-Physics Laboratory. Since 2009, he has been an Assistant Professor with the
-Mechanical Engineering Department, Texas A{\&}M University, College Station.
-He is the author of three books, more than 150 articles, and more than 70
-inventions. His research interests include high-pressure and high-density
-nonthermal plasma discharge processes and applications, microscale plasma
-discharges, discharges in liquids, spectroscopic diagnostics, plasma
-propulsion, and innovation plasma applications. He is an Associate Editor of
-the journal \emph{Earth, Moon, Planets}, and holds two patents.
-
-Dr. Author was a recipient of the International Association of Geomagnetism
-and Aeronomy Young Scientist Award for Excellence in 2008, and the IEEE
-Electromagnetic Compatibility Society Best Symposium Paper Award in 2011.
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Rishi_Formal_Pic.jpg}}]{Rishikesh Ravi} is pursuing a Master of Applied Computing at Wilfrid Laurier University, Waterloo, ON, expected to graduate in December 2024. He earned his Master of Computer Applications from Veermata Jijabai Technological Institute, Mumbai, India in 2021.
+	
+	From July 2021 to June 2023, he served as a Jr. Software Developer at Locobuzz Solutions in Mumbai, where he enhanced mobile applications for Android and cross-platform environments using Xamarin Forms. His contributions included optimizing performance and revamping user interfaces, which significantly improved user engagement. He also interned at Thomas Cook India Ltd., developing web applications and REST APIs.
+	
+	With expertise in languages such as Java, C\#, and Python, along with tools like Android Studio and AWS, Mr. Rishikesh Ravi is focused on software development and web application security. His recent projects include developing applications to mitigate XSS attacks and streamline job postings. He is dedicated to creating innovative software solutions that enhance user experiences.
 \end{IEEEbiography}
 
 
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{author2.png}}]{Second B. Author} (M'76--SM'81--F'87) and all authors may include
-biographies. Biographies are often not included in conference-related
-papers. This author became a Member (M) of IEEE in 1976, a Senior
-Member (SM) in 1981, and a Fellow (F) in 1987. The first paragraph may
-contain a place and/or date of birth (list place, then date). Next,
-the author's educational background is listed. The degrees should be
-listed with type of degree in what field, which institution, city,
-state, and country, and year the degree was earned. The author's major
-field of study should be lower-cased.
-
-The second paragraph uses the pronoun of the person (he or she) and not the
-author's last name. It lists military and work experience, including summer
-and fellowship jobs. Job titles are capitalized. The current job must have a
-location; previous positions may be listed
-without one. Information concerning previous publications may be included.
-Try not to list more than three books or published articles. The format for
-listing publishers of a book within the biography is: title of book
-(publisher name, year) similar to a reference. Current and previous research
-interests end the paragraph.
-
-The third paragraph begins with the author's
-title and last name (e.g., Dr.\ Smith, Prof.\ Jones, Mr.\ Kajor, Ms.\ Hunter).
-List any memberships in professional societies other than the IEEE. Finally,
-list any awards and work for IEEE committees and publications. If a
-photograph is provided, it should be of good quality, and
-professional-looking. Following are two examples of an author's biography.
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Hamza_Formal_Pic.png}}]{Hamza Rangwala} is pursuing a Master of Applied Computing at Wilfrid Laurier University, Waterloo, ON, expected to graduate in December 2024. He has completed significant coursework in artificial intelligence, data analytics, and machine learning.
+	
+	From September 2023 to January 2024, he worked as a Research Assistant at Wilfrid Laurier University, contributing to projects focused on natural language processing and predictive analytics. Previously, as a Software Engineer at Solution-Wise, he developed scalable software solutions and implemented machine learning models for user discovery and geolocation tagging. 
+	
+	Proficient in Java, Python, JavaScript, and Dart, Mr. Hamza A. Rangwala has developed expertise in using frameworks and tools such as TensorFlow, Flutter, and AWS. His recent projects include Web application utilizing OpenAI's API for text analysis. He is passionate about leveraging AI and ML technologies to solve complex real-world problems.
 \end{IEEEbiography}
 
 
-
-\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{author3.png}}]{Third C. Author, Jr.} (M'87) received the B.S. degree in mechanical
-engineering from National Chung Cheng University, Chiayi, Taiwan, in 2004
-and the M.S. degree in mechanical engineering from National Tsing Hua
-University, Hsinchu, Taiwan, in 2006. He is currently pursuing the Ph.D.
-degree in mechanical engineering at Texas A{\&}M University, College
-Station, TX, USA.
-
-From 2008 to 2009, he was a Research Assistant with the Institute of
-Physics, Academia Sinica, Tapei, Taiwan. His research interest includes the
-development of surface processing and biological/medical treatment
-techniques using nonthermal atmospheric pressure plasmas, fundamental study
-of plasma sources, and fabrication of micro- or nanostructured surfaces.
-
-Mr. Author's awards and honors include the Frew Fellowship (Australian
-Academy of Science), the I. I. Rabi Prize (APS), the European Frequency and
-Time Forum Award, the Carl Zeiss Research Award, the William F. Meggers
-Award and the Adolph Lomb Medal (OSA).
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{Trushit_Formal_Pic.jpg}}]{Trushit Patel} received the Bachelors of Technology degree in Computer Science and Engineering from the India University, Ahmedabad, in 2023 and is currently pursuing a Master's degree in Applied Computing at Wilfrid Laurier University, which he is expected to complete in December, 2024.
+	
+	His professional experience includes roles as an AI Trainer and Software Development Engineer, focusing on AI data annotation, real-time applications, and scalable software solutions. Trushit's research and professional interests lie in artificial intelligence, software development, and microservices architecture.
+	
 \end{IEEEbiography}
 
 \EOD
