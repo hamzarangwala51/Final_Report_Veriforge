@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.11)  13 DEC 2024 19:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.11)  13 DEC 2024 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -599,7 +599,7 @@ Package hyperref Info: Link coloring ON on input line 18.
 \@outlinefile=\write3
 \openout3 = `access.out'.
 
-<bullet.png, id=99, 12.045pt x 35.38219pt>
+<bullet.png, id=102, 12.045pt x 35.38219pt>
 File: bullet.png Graphic file (type png)
 <use bullet.png>
 Package pdftex.def Info: bullet.png  used on input line 40.
@@ -638,7 +638,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<logo.png, id=106, 206.27063pt x 53.44969pt>
+<logo.png, id=109, 206.27063pt x 53.44969pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png  used on input line 58.
@@ -667,12 +667,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
  <./logo.png> <./bullet.png>]
-<Slicing_Image.png, id=138, 711.25725pt x 473.3685pt>
+<Slicing_Image.png, id=141, 711.25725pt x 473.3685pt>
 File: Slicing_Image.png Graphic file (type png)
 <use Slicing_Image.png>
 Package pdftex.def Info: Slicing_Image.png  used on input line 87.
 (pdftex.def)             Requested size: 227.30324pt x 151.27876pt.
-<notaglinelogo.png, id=142, 169.38281pt x 42.91031pt>
+<notaglinelogo.png, id=145, 169.38281pt x 42.91031pt>
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
 Package pdftex.def Info: notaglinelogo.png  used on input line 96.
@@ -741,7 +741,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
                                                   \__shipout_drop_firstpage_...
 l.141 
       ]
-<Base_Model.png, id=202, 469.755pt x 196.3335pt>
+<Base_Model.png, id=205, 469.755pt x 196.3335pt>
 File: Base_Model.png Graphic file (type png)
 <use Base_Model.png>
 Package pdftex.def Info: Base_Model.png  used on input line 160.
@@ -801,12 +801,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<LOSS_VGG16.png, id=218, 735.34724pt x 374.5995pt>
+<LOSS_VGG16.png, id=221, 735.34724pt x 374.5995pt>
 File: LOSS_VGG16.png Graphic file (type png)
 <use LOSS_VGG16.png>
 Package pdftex.def Info: LOSS_VGG16.png  used on input line 248.
 (pdftex.def)             Requested size: 227.30324pt x 115.7874pt.
-<VGG16_ACC.png, id=219, 741.36975pt x 379.4175pt>
+<VGG16_ACC.png, id=222, 741.36975pt x 379.4175pt>
 File: VGG16_ACC.png Graphic file (type png)
 <use VGG16_ACC.png>
 Package pdftex.def Info: VGG16_ACC.png  used on input line 253.
@@ -835,32 +835,32 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [6 <./LOSS_VGG16.png> <./VGG16_ACC.png>]
-<Authentic_img.png, id=230, 256.70906pt x 196.48407pt>
+<Authentic_img.png, id=233, 256.70906pt x 196.48407pt>
 File: Authentic_img.png Graphic file (type png)
 <use Authentic_img.png>
 Package pdftex.def Info: Authentic_img.png  used on input line 268.
 (pdftex.def)             Requested size: 116.17584pt x 88.92068pt.
-<Forgery_img.png, id=231, 237.13594pt x 196.48407pt>
+<Forgery_img.png, id=234, 237.13594pt x 196.48407pt>
 File: Forgery_img.png Graphic file (type png)
 <use Forgery_img.png>
 Package pdftex.def Info: Forgery_img.png  used on input line 273.
 (pdftex.def)             Requested size: 106.07895pt x 87.89233pt.
-<Graph_LOSS.jpg, id=233, 598.48593pt x 312.41719pt>
+<Graph_LOSS.jpg, id=236, 598.48593pt x 312.41719pt>
 File: Graph_LOSS.jpg Graphic file (type jpg)
 <use Graph_LOSS.jpg>
 Package pdftex.def Info: Graph_LOSS.jpg  used on input line 287.
 (pdftex.def)             Requested size: 227.30324pt x 118.65302pt.
-<Graph_ACC.jpg, id=234, 598.48593pt x 319.1925pt>
+<Graph_ACC.jpg, id=237, 598.48593pt x 319.1925pt>
 File: Graph_ACC.jpg Graphic file (type jpg)
 <use Graph_ACC.jpg>
 Package pdftex.def Info: Graph_ACC.jpg  used on input line 292.
 (pdftex.def)             Requested size: 227.30324pt x 121.22621pt.
-<Confusion_Matrix.jpg, id=236, 488.57532pt x 411.78844pt>
+<Confusion_Matrix.jpg, id=239, 488.57532pt x 411.78844pt>
 File: Confusion_Matrix.jpg Graphic file (type jpg)
 <use Confusion_Matrix.jpg>
 Package pdftex.def Info: Confusion_Matrix.jpg  used on input line 305.
 (pdftex.def)             Requested size: 161.64265pt x 136.23618pt.
-<Chart_EM.jpg, id=237, 506.6428pt x 160.34906pt>
+<Chart_EM.jpg, id=240, 506.6428pt x 160.34906pt>
 File: Chart_EM.jpg Graphic file (type jpg)
 <use Chart_EM.jpg>
 Package pdftex.def Info: Chart_EM.jpg  used on input line 310.
@@ -926,7 +926,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
 (hyperref)                be the same. Added a new anchor on input line 422.
 
-<Rishi_Formal_Pic.jpg, id=260, 450.18187pt x 451.6875pt>
+<Rishi_Formal_Pic.jpg, id=263, 450.18187pt x 451.6875pt>
 File: Rishi_Formal_Pic.jpg Graphic file (type jpg)
 <use Rishi_Formal_Pic.jpg>
 Package pdftex.def Info: Rishi_Formal_Pic.jpg  used on input line 422.
@@ -935,40 +935,49 @@ File: Rishi_Formal_Pic.jpg Graphic file (type jpg)
 <use Rishi_Formal_Pic.jpg>
 Package pdftex.def Info: Rishi_Formal_Pic.jpg  used on input line 422.
 (pdftex.def)             Requested size: 72.26411pt x 72.5058pt.
-<Hamza_Formal_Pic.png, id=263, 602.25pt x 602.25pt>
+<Ayaz_Formal_Pic.jpg, id=266, 803.0pt x 803.0pt>
+File: Ayaz_Formal_Pic.jpg Graphic file (type jpg)
+<use Ayaz_Formal_Pic.jpg>
+Package pdftex.def Info: Ayaz_Formal_Pic.jpg  used on input line 429.
+(pdftex.def)             Requested size: 72.26688pt x 72.26688pt.
+File: Ayaz_Formal_Pic.jpg Graphic file (type jpg)
+<use Ayaz_Formal_Pic.jpg>
+Package pdftex.def Info: Ayaz_Formal_Pic.jpg  used on input line 429.
+(pdftex.def)             Requested size: 72.26688pt x 72.26688pt.
+<Hamza_Formal_Pic.png, id=269, 602.25pt x 602.25pt>
 File: Hamza_Formal_Pic.png Graphic file (type png)
 <use Hamza_Formal_Pic.png>
-Package pdftex.def Info: Hamza_Formal_Pic.png  used on input line 430.
+Package pdftex.def Info: Hamza_Formal_Pic.png  used on input line 437.
 (pdftex.def)             Requested size: 72.26688pt x 72.26688pt.
 File: Hamza_Formal_Pic.png Graphic file (type png)
 <use Hamza_Formal_Pic.png>
-Package pdftex.def Info: Hamza_Formal_Pic.png  used on input line 430.
+Package pdftex.def Info: Hamza_Formal_Pic.png  used on input line 437.
 (pdftex.def)             Requested size: 72.26688pt x 72.26688pt.
 
-Underfull \hbox (badness 1917) in paragraph at lines 430--435
+Underfull \hbox (badness 1917) in paragraph at lines 437--442
 []\T1/times/n/n/8 From Septem-ber 2023 to Jan-uary 2024, he
  []
 
-<Trushit_Formal_Pic.jpg, id=266, 296.5479pt x 398.9304pt>
+<Trushit_Formal_Pic.jpg, id=272, 296.5479pt x 398.9304pt>
 File: Trushit_Formal_Pic.jpg Graphic file (type jpg)
 <use Trushit_Formal_Pic.jpg>
-Package pdftex.def Info: Trushit_Formal_Pic.jpg  used on input line 438.
+Package pdftex.def Info: Trushit_Formal_Pic.jpg  used on input line 445.
 (pdftex.def)             Requested size: 67.15025pt x 90.33374pt.
 File: Trushit_Formal_Pic.jpg Graphic file (type jpg)
 <use Trushit_Formal_Pic.jpg>
-Package pdftex.def Info: Trushit_Formal_Pic.jpg  used on input line 438.
+Package pdftex.def Info: Trushit_Formal_Pic.jpg  used on input line 445.
 (pdftex.def)             Requested size: 67.15025pt x 90.33374pt.
 File: bullet.png Graphic file (type png)
 <use bullet.png>
-Package pdftex.def Info: bullet.png  used on input line 444.
+Package pdftex.def Info: bullet.png  used on input line 450.
 (pdftex.def)             Requested size: 5.0pt x 14.6871pt.
 
 LaTeX Font Warning: Font shape `T1/formata/m/sl' undefined
-(Font)              using `T1/formata/m/it' instead on input line 446.
+(Font)              using `T1/formata/m/it' instead on input line 452.
 
 File: notaglinelogo.png Graphic file (type png)
 <use notaglinelogo.png>
-Package pdftex.def Info: notaglinelogo.png  used on input line 446.
+Package pdftex.def Info: notaglinelogo.png  used on input line 452.
 (pdftex.def)             Requested size: 91.32pt x 23.1352pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -985,8 +994,8 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[9 <./Rishi_Formal_Pic.jpg> <./Hamza_Formal_Pic.png> <./Trushit_Formal_Pic.jpg>
-] (access.aux)
+[9 <./Rishi_Formal_Pic.jpg> <./Ayaz_Formal_Pic.jpg> <./Hamza_Formal_Pic.png> <.
+/Trushit_Formal_Pic.jpg>] (access.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -996,13 +1005,13 @@ L3 programming layer <2024-01-04>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `access.out' has not changed.
-(rerunfilecheck)             Checksum: 823CD2978505D516803B0DD9DF054975;4122.
+(rerunfilecheck)             Checksum: 2B26B66D69D7F583AAC814B2C1B5F2B6;4231.
  ) 
 Here is how much of TeX's memory you used:
- 12005 strings out of 474486
- 190551 string characters out of 5743755
+ 12012 strings out of 474486
+ 190732 string characters out of 5743755
  1968542 words of memory out of 5000000
- 34017 multiletter control sequences out of 15000+600000
+ 34024 multiletter control sequences out of 15000+600000
  646897 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,17n,79p,2116b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1023,9 +1032,9 @@ a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/hamza
 formata-bold.pfb><./t1-formata-condmedium.pfb><./t1-formata-medium.pfb><./t1-fo
 rmata-mediumitalic.pfb><./t1-formata-regular.pfb><./t1-giovannistd-bookitalic.p
 fb><./t1-times-bold.pfb><./t1-times-italic.pfb><./t1-times.pfb>
-Output written on access.pdf (9 pages, 1814510 bytes).
+Output written on access.pdf (9 pages, 1859759 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
+ 377 PDF objects out of 1000 (max. 8388607)
  78 named destinations out of 1000 (max. 500000)
- 317 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 
